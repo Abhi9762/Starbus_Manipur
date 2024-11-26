@@ -1,0 +1,20 @@
+
+Log Entry : 
+08/28/2024 17:30:08
+Error In: http://localhost:50065/Auth/PAdminTermsNConditions.aspx|  Error Code :PAdminTermsNConditions.aspx-0002| Error Message:Cannot find column 1.
+__________________________
+
+Log Entry : 
+08/28/2024 17:30:27
+Error In: http://localhost:50065/Auth/PAdminTermsNConditions.aspx|  Error Code :PAdminTermsNConditions.aspx-0002| Error Message:Cannot find column 1.
+__________________________
+
+Log Entry : 
+08/28/2024 17:31:23
+Error In: http://localhost:50065/Auth/PAdminTermsNConditions.aspx|  Error Code :PAdminTermsNConditions.aspx-0002| Error Message:Cannot find column 1.
+__________________________
+
+Log Entry : 
+08/28/2024 17:32:45
+Error In: http://localhost:50065/Auth/PAdminTermsNConditions.aspx|  Error Code :PAdminTermsNConditions.aspx-0002| Error Message:Cannot find column 1.
+__________________________

@@ -1,0 +1,125 @@
+
+Log Entry : 
+08/22/2024 10:26:41
+Error In: http://localhost:50065/Auth/SysAdmUserMapping.aspx|  Error Code :SysAdmUserMapping.aspx-0001| Error Message:42P01: relation "public.mmodule" does not exist
+__________________________
+
+Log Entry : 
+08/22/2024 11:11:26
+Error In: http://localhost:50065/Auth/SysAdmLayoutMain.aspx|  Error Code :SysAdmLayoutMain.aspx-0001| Error Message:42883: function public.f_get_layout(p_layout => text) does not exist
+__________________________
+
+Log Entry : 
+08/22/2024 11:11:38
+Error In: http://localhost:50065/Auth/SysAdmLayoutMain.aspx|  Error Code :SysAdmLayoutMain.aspx-0001| Error Message:42883: function public.f_get_layout(p_layout => text) does not exist
+__________________________
+
+Log Entry : 
+08/22/2024 11:12:57
+Error In: http://localhost:50065/Auth/SysAdmLayoutSeatNumbering.aspx|  Error Code :SysAdmLayoutSeatNumbering-M7| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 11:15:13
+Error In: http://localhost:50065/Auth/SysAdmLayoutMain.aspx|  Error Code :SysAdmLayoutMain-E1| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 11:19:38
+Error In: http://localhost:50065/Auth/SysAdmLayoutMain.aspx|  Error Code :SysAdmLayoutMain.aspx-0001| Error Message:42883: function public.f_get_layout(p_layout => text) does not exist
+__________________________
+
+Log Entry : 
+08/22/2024 11:20:08
+Error In: http://localhost:50065/Auth/SysAdmLayoutSeatNumbering.aspx|  Error Code :SysAdmLayoutSeatNumbering-M7| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 11:37:38
+Error In: http://localhost:50065/Auth/SysAdmStationMgmt.aspx|  Error Code :SysAdmStationMgmt-M2| Error Message:'ddlSDToState' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+__________________________
+
+Log Entry : 
+08/22/2024 11:39:18
+Error In: http://localhost:50065/Auth/SysAdmStationMgmt.aspx|  Error Code :SysAdmStationMgmt-M2| Error Message:'ddlSDToState' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+__________________________
+
+Log Entry : 
+08/22/2024 11:40:19
+Error In: http://localhost:50065/Auth/SysAdmStationMgmt.aspx|  Error Code :SysAdmStationMgmt-M2| Error Message:'ddlSDToState' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+__________________________
+
+Log Entry : 
+08/22/2024 11:41:19
+Error In: http://localhost:50065/Auth/SysAdmStationMgmt.aspx|  Error Code :SysAdmStationMgmt-M2| Error Message:'ddlSDToState' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+__________________________
+
+Log Entry : 
+08/22/2024 11:42:01
+Error In: http://localhost:50065/Auth/SysAdmStationMgmt.aspx|  Error Code :SysAdmStationMgmt-M2| Error Message:'ddlSDToState' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+__________________________
+
+Log Entry : 
+08/22/2024 12:13:18
+Error In: http://localhost:50065/traveller/seatSelection.aspx|  Error Code :seatSelection.aspx-0005| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 12:14:11
+Error In: http://localhost:50065/traveller/ticketStatus.aspx|  Error Code :ticketStatus.aspx-0002| Error Message:Unable to connect to the remote server
+__________________________
+
+Log Entry : 
+08/22/2024 12:16:59
+Error In: http://localhost:50065/traveller/seatSelection.aspx|  Error Code :seatSelection.aspx-0005| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 12:17:33
+Error In: http://localhost:50065/traveller/ticketStatus.aspx|  Error Code :ticketStatus.aspx-0002| Error Message:Unable to connect to the remote server
+__________________________
+
+Log Entry : 
+08/22/2024 12:19:20
+Error In: http://localhost:50065/traveller/seatSelection.aspx|  Error Code :seatSelection.aspx-0005| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 12:23:45
+Error In: http://localhost:50065/traveller/ticketStatus.aspx|  Error Code :ticketStatus.aspx-0002| Error Message:Unable to connect to the remote server
+__________________________
+
+Log Entry : 
+08/22/2024 12:29:33
+Error In: http://localhost:50065/traveller/seatSelection.aspx|  Error Code :seatSelection.aspx-0005| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 12:39:37
+Error In: http://localhost:50065/traveller/ticketCancel.aspx|  Error Code :ticketCancel.aspx-0003| Error Message:Unable to connect to the remote server
+__________________________
+
+Log Entry : 
+08/22/2024 12:42:37
+Error In: http://localhost:50065/BookTicket.aspx|  Error Code :BookTicket-M2| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 12:53:31
+Error In: http://localhost:50065/BookTicket.aspx|  Error Code :BookTicket-M2| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+08/22/2024 13:02:41
+Error In: http://localhost:50065/Auth/SysadmEmployeeDetails.aspx|  Error Code :SysadmEmployeeDetails.aspx-0014| Error Message:Parameter 'p_photo' must have its value set
+__________________________
+
+Log Entry : 
+08/22/2024 13:13:03
+Error In: http://localhost:50065/Auth/CntrSeatSelection.aspx|  Error Code :CntrSeatSelection.aspx-0004| Error Message:Thread was being aborted.
+__________________________

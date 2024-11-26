@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class TrackMyBus : System.Web.UI.Page
+{
+    private sbCommonFunc _common = new sbCommonFunc();
+    sbSecurity _security = new sbSecurity();
+    sbLoaderNdPopup _popup = new sbLoaderNdPopup();
+    sbValidation _validation = new sbValidation();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Session["heading"] = "Track My Bus";
+    }
+    private void Errormsg(string msg)
+    {
+        string popup = _popup.modalPopupSmall("W", "Information", msg, "Close");
+        Response.Write(popup);
+    }
+    protected void lbtntrackbus_Click(object sender, EventArgs e)
+    {
+        if (_validation.IsValidString(tbpnr.Text, 5, tbpnr.MaxLength) == false) 
+        {
+            Errormsg("Invalid PNR");
+            return;
+        }
+        information("Track my bus Facilities very comming soon");
+    }
+    private void information(string msg)
+    {
+        string popup = _popup.modalPopupLarge("S", "Information", msg, "OK");
+        Response.Write(popup);
+    }
+}

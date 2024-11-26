@@ -1,0 +1,5 @@
+
+Log Entry : 
+08/12/2024 12:59:05
+Error In: https://utcdemo.uk.gov.in/Starbusarn_audit/Auth/moduleassignment.aspx|  Error Code :SysadmEmployeeDetails-M12| Error Message:42P01: relation "public.mmodule" does not exist
+__________________________

@@ -1,0 +1,555 @@
+
+Log Entry : 
+08/05/2024 12:15:59
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:16:02
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:16:02
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:16:54
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:18:16
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:18:25
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:18:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:18:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:18:50
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:19:19
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:20:05
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:20:15
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:20:16
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:20:27
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:20:36
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 12:58:04
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:16:26
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:16:31
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:16:31
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:53:23
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:53:48
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:54:35
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:54:38
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:54:38
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:57:49
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:57:52
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:57:53
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:58:04
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 14:59:21
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:11:50
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:11:53
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:11:53
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:12:17
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:12:20
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:13:21
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:13:23
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.TicketPrintActivity| Error Message:isPrinterSupported, java.lang.NullPointerException: Attempt to invoke interface method 'boolean com.ezetap.medusa.device.printer.IPrinterInterface.isPrinterSupported()' on a null object reference,  APSTS0050, 05/08/2024 02:56:58 PM
+__________________________
+
+Log Entry : 
+08/05/2024 15:14:17
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:14:19
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.QRPaymentActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 24 path $.Result, API > qrCodeRequest APSTS0050, 05/08/2024 02:57:51 PM
+__________________________
+
+Log Entry : 
+08/05/2024 15:15:15
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:15:17
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.QRPaymentActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 24 path $.Result, API > qrCodeRequest APSTS0050, 05/08/2024 02:58:01 PM
+__________________________
+
+Log Entry : 
+08/05/2024 15:15:22
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:15:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:16:26
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:16:36
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:16:46
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/InsertTicket|  Error Code :Table Name| Error Message:Success
+__________________________
+
+Log Entry : 
+08/05/2024 15:16:46
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/InsertTicket|  Error Code :wsCounterETM| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:16:56
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:52:32
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:52:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:52:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:52:43
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:52:46
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingConfirmationActivity| Error Message:isPrinterSupported, java.lang.NullPointerException: Attempt to invoke interface method 'boolean com.ezetap.medusa.device.printer.IPrinterInterface.isPrinterSupported()' on a null object reference,  APSTS0050, 05/08/2024 03:00:24 PM
+__________________________
+
+Log Entry : 
+08/05/2024 15:53:24
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:53:53
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:54:14
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:54:41
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 15:54:59
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:04:41
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:04:44
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:04:45
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:04:58
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:05:22
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:05:37
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:05:45
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:05:57
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:06:04
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/InsertTicket|  Error Code :Table Name| Error Message:Success
+__________________________
+
+Log Entry : 
+08/05/2024 17:06:04
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/InsertTicket|  Error Code :wsCounterETM| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:06:20
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:13:11
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:13:12
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:13:14
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingConfirmationActivity| Error Message:isPrinterSupported, java.lang.NullPointerException: Attempt to invoke interface method 'boolean com.ezetap.medusa.device.printer.IPrinterInterface.isPrinterSupported()' on a null object reference,  APSTS0050, 05/08/2024 04:49:25 PM
+__________________________
+
+Log Entry : 
+08/05/2024 17:13:16
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:13:40
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:14:04
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:14:05
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingConfirmationActivity| Error Message:isPrinterSupported, java.lang.NullPointerException: Attempt to invoke interface method 'boolean com.ezetap.medusa.device.printer.IPrinterInterface.isPrinterSupported()' on a null object reference,  APSTS0050, 05/08/2024 04:49:44 PM
+__________________________
+
+Log Entry : 
+08/05/2024 17:16:54
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:16:56
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingConfirmationActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 24 path $.Result, API > qrCodeRequest APSTS0050, 05/08/2024 04:49:55 PM
+__________________________
+
+Log Entry : 
+08/05/2024 17:17:01
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:17:13
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:17:26
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:17:29
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:17:31
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:17:42
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:32:25
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:32:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:32:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:33:12
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:33:19
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:34:02
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:34:05
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:34:06
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:34:20
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:34:55
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:35:00
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:35:02
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 17:35:11
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 19:03:16
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 19:04:30
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/InsertTicket|  Error Code :Table Name| Error Message:Success
+__________________________
+
+Log Entry : 
+08/05/2024 19:04:53
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 19:05:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/InsertTicket|  Error Code :Table Name| Error Message:Success
+__________________________
+
+Log Entry : 
+08/05/2024 19:06:09
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 19:17:50
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 19:21:01
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/savePassengers|  Error Code :wsCounterETM| Error Message:1
+__________________________
+
+Log Entry : 
+08/05/2024 21:34:18
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 21:35:38
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/InsertTicket|  Error Code :Table Name| Error Message:Success
+__________________________
+
+Log Entry : 
+08/05/2024 21:45:51
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 21:50:31
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 21:52:56
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 21:53:00
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 21:55:31
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________
+
+Log Entry : 
+08/05/2024 21:56:11
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wsAgentEtm.asmx/Error_log|  Error Code :com.apstsonline.apstsagentbooking| Error Message:getText, android.content.res.Resources$NotFoundException: String resource ID #0x1f4,  AGPBGFA24, 30/07/2024 03:14:12 PM
+__________________________

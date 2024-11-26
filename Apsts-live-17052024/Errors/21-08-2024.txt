@@ -1,0 +1,20 @@
+
+Log Entry : 
+08/21/2024 11:13:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/DieselFillEntry.aspx|  Error Code :DieselFill-M13| Error Message:Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+08/21/2024 11:13:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/DieselFillEntry.aspx|  Error Code :DieselFill-M13| Error Message:Input string was not in a correct format.
+__________________________
+
+Log Entry : 
+08/21/2024 15:38:51
+Error In: http://localhost:50065/Auth/ProjectAdmGenInfo.aspx|  Error Code :PAdminGenInfo-M2| Error Message:Parameter is not valid.
+__________________________
+
+Log Entry : 
+08/21/2024 17:24:13
+Error In: http://localhost:50065/Auth/PAdminContDetails.aspx|  Error Code :PAdminContDetails.aspx-0006| Error Message:An error occurred while parsing EntityName. Line 1, position 61.
+__________________________

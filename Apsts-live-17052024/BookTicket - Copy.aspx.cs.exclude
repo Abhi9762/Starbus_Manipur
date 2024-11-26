@@ -1,0 +1,133 @@
+﻿using Npgsql;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Xml;
+
+
+public partial class BookTicket : System.Web.UI.Page
+{
+    private NpgsqlCommand MyCommand;
+    DataTable dt = new DataTable();
+    private sbBLL bll = new sbBLL();
+    private sbCommonFunc _common = new sbCommonFunc();
+    sbLoaderNdPopup _popup = new sbLoaderNdPopup();
+    sbValidation _SecurityCheck = new sbValidation();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Session["heading"] = "Book Ticket";
+        if (!IsPostBack)
+        {
+            GetServiceType();
+            loadPopularRoutes();
+        }
+    }
+    private void Errormsg(string msg)
+    {
+        string popup = _popup.modalPopupSmall("S", "gfdfg", msg, "Close");
+        Response.Write(popup);
+    }
+    private void GetServiceType()//M1
+    {
+        try
+        {
+            ddlserviretype.Items.Clear();
+            MyCommand = new NpgsqlCommand();
+            DataTable dt = new DataTable();
+            MyCommand.Parameters.Clear();
+            MyCommand.Parameters.AddWithValue("@StoredProcedure", "auth.f_servicetype_getlist");
+            dt = bll.SelectAll(MyCommand);
+            if (dt.TableName == "Success")
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    ddlserviretype.DataSource = dt;
+                    ddlserviretype.DataValueField = "srtpid";
+                    ddlserviretype.DataTextField = "servicetype_name_en";
+                    ddlserviretype.DataBind();
+                }
+            }
+            ddlserviretype.Items.Insert(0, "All");
+            ddlserviretype.Items[0].Value = "0";
+            ddlserviretype.SelectedIndex = 0;
+        }
+        catch (Exception ex)
+        {
+            ddlserviretype.Items.Insert(0, "All");
+            ddlserviretype.Items[0].Value = "0";
+            ddlserviretype.SelectedIndex = 0;
+            _common.ErrorLog("BookTicket-M1", ex.Message.ToString());
+        }
+    }
+    protected void lbtnSearchServices_Click(object sender, EventArgs e)
+    {
+        string frSton = tbFrom.Text.Trim().ToUpper();
+        string toSton = tbTo.Text.Trim().ToUpper();
+        string date = tbDate.Text.Trim().ToUpper();
+
+        if (_SecurityCheck.IsValidString(frSton, 2, 50) == false)
+        {
+            Errormsg("Enter valid From Station Name");
+            return;
+        }
+        if (_SecurityCheck.IsValidString(toSton, 2, 50) == false)
+        {
+            Errormsg("Enter valid To Station Name");
+            return;
+        }
+        if (_SecurityCheck.IsValidString(date, 10, 10) == false)
+        {
+            Errormsg("Enter valid Date");
+            return;
+        }
+        loadServices(frSton, toSton, date);
+    }
+    private void loadServices(string fromStationName, string toStationName, string date)//M2
+    {
+        try
+        {
+            wsClass obj = new wsClass();
+            DataTable dt = new DataTable();
+            dt = obj.search_services_dt(fromStationName, toStationName, "0", date);
+            if (dt.Rows.Count > 0)
+            {
+                Session["fromStationName"] = fromStationName;
+                Session["toStationName"] = toStationName;
+                Session["date"] = date;
+                Response.Redirect("seatavailablity.aspx");
+            }
+            else
+            {
+                Errormsg("No Service");
+            }
+        }
+        catch (Exception ex)
+        {
+            Errormsg("No Service");
+            _common.ErrorLog("BookTicket-M2", ex.Message.ToString());
+        }
+    }
+    private void loadPopularRoutes()
+    {
+        sbSummary obj = new sbSummary();
+        DataTable dt = obj.getRouteBooking(5, "T");
+        rptRoutes.DataSource = dt;
+        rptRoutes.DataBind();
+    }
+    protected void rptRoutes_ItemCommand(object source, RepeaterCommandEventArgs e)
+    {
+        if (e.Item.ItemType == ListItemType.Item)
+        {
+            LinkButton lbtnroute = (LinkButton)e.Item.FindControl("lbtnroute");
+            HiddenField frmstation = (HiddenField)e.Item.FindControl("hdfrmstation");
+            HiddenField tostation = (HiddenField)e.Item.FindControl("hdtostation");
+            string date = DateTime.Now.Date.ToString("dd/MM/yyyy");
+            loadServices(frmstation.Value, tostation.Value, date);
+        }
+    }
+}

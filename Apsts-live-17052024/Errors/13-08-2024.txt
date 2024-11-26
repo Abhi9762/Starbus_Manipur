@@ -1,0 +1,350 @@
+
+Log Entry : 
+08/13/2024 12:25:13
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:25:17
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:25:18
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:25:21
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:25:24
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:socketConnect, java.net.SocketTimeoutException: connect timed out, API > getAuthentication APSTS0050, 13/08/2024 12:02:37 PM
+__________________________
+
+Log Entry : 
+08/13/2024 12:31:52
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:52:15
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:52:20
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:52:20
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:52:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:53:31
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:53:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:53:35
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:53:43
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:56:39
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:56:41
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.TicketPrintActivity| Error Message:isPrinterSupported, java.lang.NullPointerException: Attempt to invoke interface method 'boolean com.ezetap.medusa.device.printer.IPrinterInterface.isPrinterSupported()' on a null object reference,  APSTS0050, 13/08/2024 12:39:41 PM
+__________________________
+
+Log Entry : 
+08/13/2024 12:56:49
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:56:51
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:56:57
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:58:30
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 12:58:31
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.CancelOnlineTicketsActivity| Error Message:SSL_read, javax.net.ssl.SSLException: Read error: ssl=0x7ab098c0: I/O error during system call, Software caused connection abort, API > send_ticket_confirmation APSTS0050, 13/08/2024 12:41:24 PM
+__________________________
+
+Log Entry : 
+08/13/2024 12:58:59
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:04:24
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:04:30
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:04:42
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:04:45
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:05:11
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:05:13
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :CommonMethode| Error Message:socketConnect, java.net.SocketException: Software caused connection abort, API > CheckUser APSTS0050, 13/08/2024 12:41:54 PM
+__________________________
+
+Log Entry : 
+08/13/2024 13:05:17
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:05:33
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:05:47
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:05:49
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:05:56
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:05:59
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:06:16
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:06:18
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :CommonMethode| Error Message:socketConnect, java.net.SocketException: Software caused connection abort, API > getAuthentication APSTS0050, 13/08/2024 12:41:54 PM
+__________________________
+
+Log Entry : 
+08/13/2024 13:06:21
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:06:33
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:06:58
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:07:02
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:07:06
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:07:15
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:07:21
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:07:32
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:07:36
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:07:42
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:07:53
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:08:00
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:09:40
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:10:06
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:11:01
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:11:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:34:57
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:35:19
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 13:35:26
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:05:49
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:05:52
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:05:53
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:06:12
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:06:14
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.TicketPrintActivity| Error Message:isPrinterSupported, java.lang.NullPointerException: Attempt to invoke interface method 'boolean com.ezetap.medusa.device.printer.IPrinterInterface.isPrinterSupported()' on a null object reference,  APSTS0050, 13/08/2024 01:18:27 PM
+__________________________
+
+Log Entry : 
+08/13/2024 15:06:20
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:09:36
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:10:05
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:13:23
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:13:27
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:13:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:13:39
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:13:41
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.TicketPrintActivity| Error Message:isPrinterSupported, java.lang.NullPointerException: Attempt to invoke interface method 'boolean com.ezetap.medusa.device.printer.IPrinterInterface.isPrinterSupported()' on a null object reference,  APSTS0050, 13/08/2024 02:55:12 PM
+__________________________
+
+Log Entry : 
+08/13/2024 15:16:22
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/AuthenticationMethod|  Error Code :dtToken| Error Message:1
+__________________________
+
+Log Entry : 
+08/13/2024 15:37:18
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/sysAdmSpecialTicketCancellation.aspx|  Error Code :sbSecurity-M2| Error Message:Object reference not set to an instance of an object.
+__________________________

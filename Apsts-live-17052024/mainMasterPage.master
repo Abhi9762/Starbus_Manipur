@@ -1,0 +1,363 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mainMasterPage.master.cs" Inherits="mainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="StarBus  Manipur MSTS">
+    <meta name="author" content="Creative Tim">
+    <title>StarBus ver 1.0</title>
+    <%--<!-- Favicon -->
+	<link rel="icon" href="Logo/Favicon.png" type="image/png">
+	<link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+	<link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+	<!-- Page plugins -->
+	<!-- Argon CSS -->
+	<link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">--%>
+    <!-- Favicon -->
+
+    <link rel="icon" href="Logo/Favicon.png" type="image/png" />
+    <!-- Fonts -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css" />
+    <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css" />
+    <!-- Page plugins -->
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" />
+
+
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    <script src="assets/js/jquery-n.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <style>
+        @media screen and (max-width: 420px) {
+            .deptName {
+                font-size: 10px !important;
+            }
+
+            .starbuss {
+                font-size: 12px !important;
+            }
+
+            .govofindia {
+                font-size: 8px !important;
+                position: absolute;
+                left: 0;
+                top: 45px;
+                padding-left: 5px;
+            }
+
+            .imagedept {
+                width: 25px;
+                height: 25px;
+                margin-top: 8px;
+            }
+        }
+
+        @media screen and (min-width: 420px) {
+            .deptName {
+                font-size: 20px !important;
+            }
+
+            .starbuss {
+                font-size: 20px !important;
+            }
+
+            .govofindia {
+                font-size: 11px !important;
+                position: absolute;
+                left: 0;
+                top: 45px;
+                padding-left: 19px;
+            }
+
+            .imagedept {
+                width: 55px;
+                height: 45px;
+                margin-top: 1px !important;
+            }
+        }
+
+
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+
+        <div class="top-bg py-3">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col" style="line-height: 14px; color: white;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <asp:Image runat="server" ID="ImgDepartmentLogo" Height="40px" ImageUrl="" Style="border-radius:50%; background-color:white;"/>
+                                </td>
+                                <td style="padding-left: 5px;">
+                                    <asp:Label runat="server" ID="lblDeptName" CssClass="deptName" Text="" Style="font-size: 16px !important; font-weight: 500;"> </asp:Label>
+                                    <br />
+                                    <span style="font-size: 12px">Version
+                                        <asp:Label runat="server" ID="lblversion" Text=""></asp:Label></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <nav class="navbar navbar-horizontal navbar-expand-lg navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse text-left" id="navbar-primary" />
+                            <div class="navbar-collapse-header">
+                                <div class="row">
+                                    <div class="col-6 collapse-brand">
+                                        <a href="javascript:void(0)">Starbus*
+                                        </a>
+                                    </div>
+                                    <div class="col-6 collapse-close">
+                                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Brand -->
+
+
+                            <!-- Links -->
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="Home.aspx" class="nav-link"><i class="fas fa-home"></i></a>
+                                </li>
+                                <!-- Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">About Us
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="History.aspx">History</a>
+                                        <a class="dropdown-item" href="Routes.aspx">Routes</a>
+                                        <a class="dropdown-item" href="Rti.aspx">RTI</a>
+                                        <a class="dropdown-item" href="Pios.aspx">PIOS</a>
+                                        <!--    <a class="dropdown-item" href="#dvmentor" runat="server" id="hrfMentors">Our Mentors</a>-->
+
+
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="Agents.aspx" title="Click here to authorized agents" runat="server" id="lblagents">
+                                            <asp:Label ID="lblMenuAgents" runat="server" Text="Agents" meta:resourcekey="lblMenuAgentsResource1"></asp:Label></a>
+                                        <a class="dropdown-item" href="BookingCounters.aspx" title="Click here to Booking Counters">
+                                            <asp:Label ID="lblBookingCounters" runat="server" Text="Booking Counters" meta:resourcekey="lblBookingCountersResource1"></asp:Label></a>
+                                        <a class="dropdown-item" href="CommonServiceCentres.aspx" title="Click here to Common Service Centers" runat="server" id="lblcsccentre">
+                                            <asp:Label ID="lblCommonServiceCentres" runat="server" Text="Common Service Centers" meta:resourcekey="lblCommonServiceCentresResource1"></asp:Label></a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="Tenders.aspx" title="Click here to view published tenders">
+                                            <asp:Label ID="lblMenuTender" runat="server" Text="Tenders" meta:resourcekey="lblMenuTenderResource1"></asp:Label></a>
+                                        <div class="dropdown-divider"></div>
+                                        <!--    <a class="dropdown-item" href="#divbusservices" runat="server" id="hrfBusServices">Our Bus Services</a>-->
+                                        <a class="dropdown-item" href="ChartedBusBooking.aspx" title="Click here for Charted Bus Booking" runat="server" id="lblchartedbooking">
+                                            <asp:Label ID="lblMenuChartedBusBooking" runat="server" Text="Charted Bus Booking" meta:resourcekey="lblMenuChartedBusBookingResource1"></asp:Label></a>
+                                        <a class="dropdown-item" href="CourierBooking.aspx" title="Click here for Parcel Booking" runat="server" id="lblparcelbooking">
+                                            <asp:Label ID="lblMenuCourierBooking" runat="server" Text="Parcel Booking" meta:resourcekey="lblMenuCourierBookingResource1"></asp:Label></a>
+                                    </div>
+                                </li>
+                                <!-- Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Any Query ?
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="timetable.aspx">Timetable</a>
+                                        <a class="dropdown-item" href="Helpdesk.aspx">HelpDesk</a>
+                                        <a class="dropdown-item" href="Contact.aspx">Contact Us</a>
+                                        <a class="dropdown-item" href="Grievance.aspx">Grievance</a>
+                                        <a class="dropdown-item" href="Userguide.aspx">User Guide</a>
+                                        <a class="dropdown-item" href="#faq">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Online Service
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="BookTicket.aspx">Book Ticket</a>
+                                        <a class="dropdown-item" href="CancelBusTicket.aspx">Cancel Ticket</a>
+                                        <a class="dropdown-item" href="DownloadE_ticket.aspx">Download e-Ticket</a>
+                                        <div runat="server" id="divpass">
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="BusPass.aspx">Appy For Pass</a>
+                                            <a class="dropdown-item" href="BusPass.aspx">Download e-Pass</a>
+                                        </div>
+                                        <div runat="server" id="divagent">
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="AgentRegistrationForm.aspx">Become Agent</a>
+                                            <a class="dropdown-item" href="OnlAgTrackApplication.aspx">Track Application Status</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="org-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="bd2">
+                            <a href="Home.aspx">HOME</a> | 
+							<asp:Label ID="lblHeading1" runat="server" class="bd2"></asp:Label>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ">
+                        <div>
+                            <img src="assets/img/icon2.png">
+                            <asp:Label ID="lblHeading" runat="server" class="heading-top"></asp:Label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="min-height: 80vh;" class="midd-bg pb-8">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="container-fluid" style="bottom: 0; position: fixed; background-color: #e6e6e6fc;">
+            <footer>
+                <div class="row align-items-center justify-content-lg-between  " style="width: 100vw; position: relative; margin-left: -30px;">
+                    <div class="col-lg-8 ">
+                        <div class="copyright text-center  text-lg-left ">
+                            &copy; All Copyright 2023, StarBus* NIC | Owned & Maintained by :
+                            <asp:Label runat="server" ID="lbldepartmentname"></asp:Label>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 no-space text-right">
+                        <img alt="Image placeholder" src="assets/img/footer-nic.png">
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <%--	<footer>
+			<div class="page-header1 footer-upper ">
+				<div class="page-header1__top">
+					<div class="page-header1-bg" style="background-image: url(assets/img/footer-bg.jpg)">
+					</div>
+					<div class="page-header1-bg-overly"></div>
+					<div class="container">
+						<div class="page-header1__top-inner">
+							<div class="row">
+								<div class="col-lg-4 col-md-12 col-sm-12">
+									<div class="footer-about">
+										<div class="footer-about-in mar-bottom-30">
+											<h3 class="white">Need UTC Help?</h3>
+											<div class="footer-phone">
+												<div class="cont-icon"><i class="fa fa-2x text-white fa-phone-volume"></i></div>
+												<div class="cont-content mar-left-20">
+													<p class="mar-0">Got Questions? Call us 24X7</p>
+													<p class="bold mar-0">
+														<span>Call Us:</span>
+														<asp:Label ID="lblHelpine" runat="server"></asp:Label>
+													</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="footer-links">
+										<h3 class="white">Contact Info</h3>
+										<div>
+											<i class="fa fa-map-marked"></i>&nbsp;
+											<asp:Label runat="server" ID="lbladdress"></asp:Label>
+										</div>
+										<div>
+											<i class="fa fa-phone-volume"></i>&nbsp;
+											<asp:Label ID="lblcontact" runat="server"></asp:Label>
+										</div>
+										<div>
+											<i class="fas fa-envelope"></i>&nbsp;
+											<asp:Label runat="server" ID="lblemail"></asp:Label>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6">
+									<div class="footer-links">
+										<h3 class="white">Usefull Link</h3>
+										<ul>
+											<li><a href="Webinfomgr.aspx"><i aria-hidden="true" class="fa fa-angle-right"></i>&nbsp; Web Information Manager</a></li>
+											<li><a href="Disclaimer.aspx"><i aria-hidden="true" class="fa fa-angle-right"></i>&nbsp; Disclaimer</a></li>
+											<li><a href="PrivacyPolicy.aspx"><i aria-hidden="true" class="fa fa-angle-right"></i>&nbsp; Privacy Policy</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-12 col-sm-12">
+									<div class="footer-subscribe">
+										<h3 class="white">Powered By</h3>
+										<img src="assets/img/nic2.png">
+										<img src="assets/img/f1.png">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="footer-text">  @All Copyright 2023 StarBus*, National Informatics Centre
+			<asp:Label runat="server" ID="lbldepartmentname"></asp:Label></div>--%>
+    </form>
+    <!-- Argon Scripts -->
+    <!-- Core -->
+    <%--<script src="assets/js/jquery-n.js"></script>
+	<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/js-cookie/js.cookie.js"></script>
+	<script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+	<!-- Optional JS -->
+	<script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+	<script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
+	<script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<!-- Argon JS -->
+	<script src="assets/js/argon.js?v=1.2.0"></script>--%>
+
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+    <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+    <!-- Optional JS -->
+    <script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <!-- Argon JS -->
+    <script src="assets/js/argon.js?v=1.2.0"></script>
+
+    <!-- autoscroll js suraj -->
+    <script src="js/jquery.autoscroll.js"></script>
+    <script language="javascript" type="text/javascript">
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</body>
+</html>

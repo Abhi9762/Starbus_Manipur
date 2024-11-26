@@ -1,0 +1,86 @@
+﻿
+#progressbar {
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+    #progressbar .active {
+        color: #2dce89
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        font-size: 13px;
+        width: 20%;
+        float: left;
+        position: relative;
+        font-weight: 400
+    }
+
+    #progressbar #search_pr:before {
+        content: '\f022'; /* You should use \ and not /*/
+        font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    }
+
+    #progressbar #seat_pr:before {
+        content: '\f007'; /* You should use \ and not /*/
+        font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    }
+
+    #progressbar #confirm_pr:before {
+        content: '\f058'; /* You should use \ and not /*/
+        font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    }
+
+    #progressbar #payment_pr:before {
+        content: '\f09d'; /* You should use \ and not /*/
+        font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    }
+
+    #progressbar #status_pr:before {
+        content: '\f164'; /* You should use \ and not /*/
+        font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    }
+
+    #progressbar li:before {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        display: block;
+        font-size: 15px;
+        color: #ffffff;
+        background: lightgray;
+        border-radius: 50%;
+        margin: 0 auto 2px auto;
+        padding: 1px
+    }
+
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: lightgray;
+        position: absolute;
+        left: 0;
+        top: 18px;
+        z-index: -1
+    }
+
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+        background: #2dce89
+    }
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #673AB7
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}

@@ -1,0 +1,62 @@
+
+Log Entry : 
+07/18/2024 10:52:41
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmOfficeMgmt.aspx|  Error Code :SysAdmOfficeMgmt.aspx-0010| Error Message:53100: could not extend file "base/129829/131526": No space left on device
+__________________________
+
+Log Entry : 
+07/18/2024 10:53:06
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmOfficeMgmt.aspx|  Error Code :SysAdmOfficeMgmt.aspx-0010| Error Message:53100: could not extend file "base/129829/131526": No space left on device
+__________________________
+
+Log Entry : 
+07/18/2024 14:39:29
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/PAdminDiscountandOffer.aspx|  Error Code :sbSecurity-M2| Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+07/18/2024 14:49:43
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/PAdminAlertNoticePublishing.aspx|  Error Code :PAdminAlertNoticePublishing.aspx-0004| Error Message:Could not find a part of the path 'G:\wwwroot\Apsts-live-17052024\DBImages\AlertNotice\6_W.png'.
+__________________________
+
+Log Entry : 
+07/18/2024 14:51:01
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/PAdminAlertNoticePublishing.aspx|  Error Code :PAdminAlertNoticePublishing.aspx-0004| Error Message:Could not find a part of the path 'G:\wwwroot\Apsts-live-17052024\DBImages\AlertNotice\2_W.png'.
+__________________________
+
+Log Entry : 
+07/18/2024 14:51:45
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/PAdminAlertNoticePublishing.aspx|  Error Code :PAdminAlertNoticePublishing.aspx-0004| Error Message:Could not find a part of the path 'G:\wwwroot\Apsts-live-17052024\DBImages\AlertNotice\1_W.png'.
+__________________________
+
+Log Entry : 
+07/18/2024 14:52:42
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/PAdminAlertNoticePublishing.aspx|  Error Code :PAdminAlertNoticePublishing.aspx-0004| Error Message:Could not find a part of the path 'G:\wwwroot\Apsts-live-17052024\DBImages\AlertNotice\3.pdf'.
+__________________________
+
+Log Entry : 
+07/18/2024 15:05:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmLayoutMain.aspx|  Error Code :SysAdmLayoutMain.aspx-0001| Error Message:42883: function public.f_get_layout(p_layout => text) does not exist
+__________________________
+
+Log Entry : 
+07/18/2024 15:05:56
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmLayoutSeatNumbering.aspx|  Error Code :SysAdmLayoutSeatNumbering-M7| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+07/18/2024 15:07:21
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmLayoutMain.aspx|  Error Code :SysAdmLayoutMain-E1| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+07/18/2024 16:56:21
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmStationMgmt.aspx|  Error Code :SysAdmStationMgmt-M2| Error Message:'ddlSDToState' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+__________________________
+
+Log Entry : 
+07/18/2024 16:58:10
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmStationMgmt.aspx|  Error Code :SysAdmStationMgmt-M2| Error Message:'ddlSDToState' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+__________________________

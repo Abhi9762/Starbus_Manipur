@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--XML for Photogallary-->
+<Categories>
+  <Category Id="3">
+    <NameEng>BUS SERVICE</NameEng>
+    <NameLocal>BUS SERVICE</NameLocal>
+    <Photo Id="6" title="WINGER SERVICE" titleLocal="">PhotoGallery/Photo3_11092023114606.jpg</Photo>
+    <Photo Id="7" title="Bus" titleLocal="Bus">PhotoGallery/Photo3_21082024054524.jpg</Photo>
+    <Photo Id="8" title="Bus" titleLocal="Volvo">PhotoGallery/Photo3_21082024054737.jpg</Photo>
+    <Photo Id="9" title="Ordinary" titleLocal="Ordinary">PhotoGallery/Photo3_21082024054759.jpg</Photo>
+    <Photo Id="10" title="Janrath" titleLocal="Janrath">PhotoGallery/Photo3_21082024054841.jpg</Photo>
+    <Photo Id="11" title="Volvo AC" titleLocal="Volvo AC">PhotoGallery/Photo3_21082024055030.jpg</Photo>
+  </Category>
+</Categories>

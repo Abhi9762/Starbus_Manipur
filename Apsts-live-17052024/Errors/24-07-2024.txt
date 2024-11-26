@@ -1,0 +1,25 @@
+
+Log Entry : 
+07/24/2024 10:55:40
+Error In: https://utcdemo.uk.gov.in/Starbusarn_audit/Auth/CSPRegistration.aspx|  Error Code :sbSecurity-M4| Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+07/24/2024 12:16:25
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmDepotService.aspx|  Error Code :sbSecurity-M2| Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+07/24/2024 12:22:05
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/tkDutySlip.aspx|  Error Code :sbSecurity-M2| Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+07/24/2024 15:37:37
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/Logout.aspx|  Error Code :sbSecurity-M4| Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+07/24/2024 15:54:16
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/SysAdmUserMapping.aspx|  Error Code :SysAdmUserMapping.aspx-0001| Error Message:42P01: relation "public.mmodule" does not exist
+__________________________

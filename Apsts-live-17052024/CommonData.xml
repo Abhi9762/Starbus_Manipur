@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Page>
+    <title_txt_en>MSTS</title_txt_en>
+    <title_txt_local>Transport bus</title_txt_local>
+    <Ver_Name>1.0</Ver_Name>
+    <dept_logo_url>../Logo/DeptLogo.png</dept_logo_url>
+    <govt_logo_url>../Logo/GovtLogo.png</govt_logo_url>
+    <fav_icon_url>../Logo/Favicon.png</fav_icon_url>
+    <dept_Name_en>Manipur State Transport Services</dept_Name_en>
+    <dept_Name_local>State Transport Services</dept_Name_local>
+    <dept_Abbr_en>MANIPUR State TRANSPORT </dept_Abbr_en>
+    <dept_Abbr_local>Transport </dept_Abbr_local>
+    <managed_by>Manipur State Transport Services</managed_by>
+    <managed_by_local>State Transport Services</managed_by_local>
+    <email>msts-mst[at]gov[dot]in</email>
+    <tollfreeno>9999999999</tollfreeno>
+    <facebooklink>https://www.facebook.com/people/Arunachal-Pradesh-State-Transport-Services/100064158870269/</facebooklink>
+    <youtubelink>https://www.youtube.com/channel/UCYHEphSShZN3UP8mBfcYYBQ</youtubelink>
+    <instalink>https://www.facebook.com/people/Arunachal-Pradesh-State-Transport-Services/100064158870269/</instalink>
+    <twitterlink>https://www.facebook.com/people/Arunachal-Pradesh-State-Transport-Services/100064158870269/</twitterlink>
+    <contactNo1>8888888888</contactNo1>
+    <contactNo2>7777777777</contactNo2>
+    <contactOfc1Local>
+    </contactOfc1Local>
+    <contactOfc2Local>
+    </contactOfc2Local>
+    <webinfomanagermail>msts-mst[at]gov[dot]in</webinfomanagermail>
+    <webinfomanagercontact>8888888888</webinfomanagercontact>
+    <webinfomanagername>GM</webinfomanagername>
+    <contactNo3>
+    </contactNo3>
+    <contactNo4>
+    </contactNo4>
+    <contactOfc1>GMO</contactOfc1>
+    <contactOfc2>GMO</contactOfc2>
+    <contactOfc3>
+    </contactOfc3>
+    <contactOfc4>
+    </contactOfc4>
+    <landlineno>
+    </landlineno>
+    <faxno>
+    </faxno>
+    <stdcode>0135</stdcode>
+    <developed_by>National Informatics Centre, State Unit Dehradun, Uttarakhand (INDIA)</developed_by>
+    <pios>PIO.pdf</pios>
+    <rti_manual1>Manual_1.pdf</rti_manual1>
+    <rti_manual2>Manual_2.pdf</rti_manual2>
+    <rti_manual3>Manual_3.pdf</rti_manual3>
+    <homepage_img1_url>
+    </homepage_img1_url>
+    <homepage_img2_url>Home2.jpg</homepage_img2_url>
+    <homepage_img3_url>
+    </homepage_img3_url>
+    <homepage_img4_url>Home4.jpg</homepage_img4_url>
+    <homepage_img5_url>
+    </homepage_img5_url>
+    <homepage_img6_url>
+    </homepage_img6_url>
+    <mentor1image>
+    </mentor1image>
+    <mentor1name>
+    </mentor1name>
+    <mentor1_LocalLanguage>
+    </mentor1_LocalLanguage>
+    <mentor1designation>
+    </mentor1designation>
+    <mentor1designation>
+    </mentor1designation>
+    <mentor1_URL>
+    </mentor1_URL>
+    <mentor2image>
+    </mentor2image>
+    <mentor2name>
+    </mentor2name>
+    <mentor2_LocalLanguage>
+    </mentor2_LocalLanguage>
+    <mentor2designation>
+    </mentor2designation>
+    <mentor2_URL>
+    </mentor2_URL>
+    <mentor3image>
+    </mentor3image>
+    <mentor3name>
+    </mentor3name>
+    <mentor3_LocalLanguage>
+    </mentor3_LocalLanguage>
+    <mentor3designation>
+    </mentor3designation>
+    <mentor3_URL>
+    </mentor3_URL>
+    <mentor4image>
+    </mentor4image>
+    <mentor4name>
+    </mentor4name>
+    <mentor4_LocalLanguage>
+    </mentor4_LocalLanguage>
+    <mentor4designation>
+    </mentor4designation>
+    <mentor4_URL>
+    </mentor4_URL>
+    <Additional_modules>
+      <Module_Id>70</Module_Id>
+      <Module_Id>72</Module_Id>
+      <Module_Id>71</Module_Id>
+    </Additional_modules>
+  </Page>
+</Data>

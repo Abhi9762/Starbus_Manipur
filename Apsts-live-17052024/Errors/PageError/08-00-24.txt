@@ -1,0 +1,70 @@
+
+Log Entry : 
+04/08/2024 06:13:21
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0604202400042P20","providerReferenceId":"T2404080612299936487869","amount":207000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0107","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+04/08/2024 06:13:21
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+04/08/2024 08:03:29
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0704202400041P1","providerReferenceId":"T2404080802389285735463","amount":69000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0099","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+04/08/2024 08:03:29
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+04/08/2024 08:05:14
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0704202400041P3","providerReferenceId":"T2404080804288231534522","amount":69000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0099","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+04/08/2024 08:05:14
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+04/08/2024 09:14:26
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+04/08/2024 09:14:27
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"0504202400042P15","amount":317500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+04/08/2024 09:14:27
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+04/08/2024 09:14:27
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+04/08/2024 09:14:27
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"0504202400042P17","amount":69000,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+04/08/2024 09:14:27
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+05/08/2024 08:15:28
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0705202400041P3","providerReferenceId":"T2405080814305017760162","amount":69000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0068","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+05/08/2024 08:15:28
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________

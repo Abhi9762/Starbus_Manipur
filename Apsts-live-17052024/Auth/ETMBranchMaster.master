@@ -1,0 +1,194 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ETMBranchMaster.master.cs" Inherits="ETMBranchMaster" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4." />
+    <meta name="author" content="Creative Tim" />
+    <title>ETM Branch</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../Logo/Favicon.png" type="image/png" />
+    <!-- Fonts -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css" />
+    <!-- Page plugins -->
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css" />
+	<link href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <link href="../assets/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+      <script type="text/javascript" src="../assets/js/jquery-n.js"></script>   
+     <script src="../assets/js/jquery-ui.js" type="text/javascript"></script> 
+     <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+    <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+    
+  
+   
+    <script src="../DataTables/js/jquery.dataTables.min.js"></script>
+     <script src="../DataTables/js/dataTables.buttons.min.js"></script>
+    <script src="../DataTables/js/buttons.print.min.js"></script>
+    <script src="../DataTables/js/buttons.html5.min.js"></script>
+    <script src="../DataTables/js/pdfmake.min.js"></script>
+    <script src="../DataTables/js/vfs_fonts.js"></script>
+    <script src="../DataTables/js/jszip.min.js"></script>
+    <!-- Optional JS -->
+    <script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+	<script src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<link href="../css/paging.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="HideLoading()">
+    <form id="form1" runat="server">
+           <%
+            sbLoaderNdPopup dd = new sbLoaderNdPopup();
+            string ss = dd.getLoaderHtml();
+            Response.Write(ss);
+        %>
+     <div class="main-content" id="panel">
+            <!-- Topnav -->
+            <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="border-right pr-2" style="border-color: rgba(255, 255, 255, .5) !important;">
+                                <h3 class="mb-0 text-white">StarBus*</h3>
+                            </div>
+                            <div class="pl-2">
+                                <h4 class="mb-0 text-white">ETM Branch Manager - <asp:Label runat="server" ID="lblModuleName"></asp:Label>
+                                    </h4>
+                               
+                            </div>
+                        </div>
+
+                        <!-- Navbar links -->
+                        <ul class="navbar-nav align-items-center  ml-md-auto">							
+							<li class="nav-item mr-2 border-right">
+                                <a class="nav-link" id="lbtnCatalogue" runat="server" onserverclick="lbtnCatalogue_ServerClick" title="Go to Catalogue">
+                                  <h4 class="mb-0 text-white">  <i class="ni ni-ungroup mr-1"></i> Catalogue</h4>
+                                </a>
+                                
+                            </li>
+							<li class="nav-item dropdown">
+								<a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<h4 class="mb-0 text-white">
+										<i class="ni ni-single-02"></i>
+										<asp:Label runat="server" ID="lblempname" CssClass="text-white"></asp:Label>,
+									<asp:Label runat="server" ID="lbloffice" CssClass="text-white"></asp:Label>
+									</h4>
+								</a>
+								<div class="dropdown-menu  dropdown-menu-right ">
+									<div class="dropdown-header noti-title">
+										<h6 class="text-overflow m-0">Welcome!</h6>
+									</div>
+									<div class="mb-3">
+										<a id="lbtnChangePwd" runat="server" onserverclick="lbtnChangePwd_ServerClick" class="dropdown-item">
+                                                <i class="fa fa-lock"></i>
+                                                <span>Change Password</span>
+                                            </a>
+									</div>
+									<div class="mb-3">
+										<a id="lbtnlogout" runat="server" onserverclick="lbtnlogout_ServerClick" class="dropdown-item">
+											<i class="ni ni-user-run"></i>
+											<span>Logout</span>
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header -->
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+         <div style="min-height:600px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+             </div>
+    <div class="container-fluid" style="bottom:0;position: fixed;">
+                <footer>
+                    <div class="row align-items-center justify-content-lg-between">
+                        <div class="col-lg-6 ">
+                            <div class="copyright text-center  text-lg-left ">
+                                &copy; All Copyright 2022, StarBus 
+           
+                            </div>
+                        </div>
+                        <div class="col-lg-6 no-space text-right">
+                            <img alt="Image placeholder" src="../assets/img/footer-nic.png">
+                        </div>
+                    </div>
+                </footer>
+            <div class="row">
+                    <cc1:ModalPopupExtender ID="mpConfirmationLogout" runat="server" PopupControlID="pnlConfirmation"
+                        CancelControlID="lbtnNoConfirmation" TargetControlID="Button4" BackgroundCssClass="modalBackground">
+                    </cc1:ModalPopupExtender>
+                    <asp:Panel ID="pnlConfirmation" runat="server" Style="position: fixed;">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title text-left mb-0">Please Confirm
+                                </h4>
+                            </div>
+                            <div class="card-body text-left pt-2" style="min-height: 100px;">
+                                <asp:Label ID="lblConfirmation" runat="server" Text="Do you want to logout?"></asp:Label>
+                                <div style="width: 100%; margin-top: 20px; text-align: right;">
+                                    <asp:LinkButton ID="lbtnYesConfirmation" runat="server" OnClick="lbtnYesConfirmation_Click" CssClass="btn btn-success btn-sm"> <i class="fa fa-check"></i> Yes </asp:LinkButton>
+                                    <asp:LinkButton ID="lbtnNoConfirmation" runat="server" OnClick="lbtnNoConfirmation_Click" CssClass="btn btn-danger btn-sm ml-2"> <i class="fa fa-times"></i> No </asp:LinkButton>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="visibility: hidden;">
+                            <asp:Button ID="Button4" runat="server" Text="" />
+                        </div>
+                    </asp:Panel>
+                </div>
+                <div class="row">
+                    <cc1:ModalPopupExtender ID="mpchnagePass" runat="server" PopupControlID="pnlchangepass" TargetControlID="Button9"
+                        CancelControlID="LinkButton75" BackgroundCssClass="modalBackground">
+                    </cc1:ModalPopupExtender>
+                    <asp:Panel ID="pnlchangepass" runat="server" Style="position: fixed;">
+                        <div class="modal-content mt-5">
+                            <div class="modal-header">
+                                <div class="col-md-10">
+                                    <h3 class="m-0">Change Password</h3>
+
+                                </div>
+                                <div class="col-md-2 text-right">
+                                    <asp:LinkButton ID="LinkButton75" runat="server" UseSubmitBehavior="false" Style="color: Red; cursor: pointer;"><i class="fa fa-times fa-2x"></i></asp:LinkButton>
+
+                                </div>
+
+                            </div>
+                            <div class="modal-body p-0">
+                                <embed src="changepass.aspx" style="height: 65vh; width: 70vw" />
+                            </div>
+                        </div>
+                        <br />
+                        <div style="visibility: hidden;">
+                            <asp:Button ID="Button9" runat="server" Text="" />
+                        </div>
+                    </asp:Panel>
+                </div>
+            </div>
+        </div>
+    </form>
+   
+   
+    <!-- Argon JS -->
+    <script src="../assets/js/argon.js?v=1.2.0"></script>
+   <script language="javascript" type="text/javascript">
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+
+</body>
+</html>

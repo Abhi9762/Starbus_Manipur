@@ -1,0 +1,406 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ControlRoom.master.cs" Inherits="Auth_ControlRoom" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Control Room</title>
+    <!--     Fonts and icons     -->
+    <!-- Nucleo Icons -->
+    <link href="dashAssests/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="dashAssests/css/nucleo-svg.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css" />
+    <link id="pagestyle" href="dashAssests/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../assets/js/jquery-n.js"></script>
+    <script type="text/javascript">
+        function Counter(options) {
+            var timer;
+            var instance = this;
+            var seconds = options.seconds || 10;
+            var onUpdateStatus = options.onUpdateStatus || function () { };
+            var onCounterEnd = options.onCounterEnd || function () { };
+            var onCounterStart = options.onCounterStart || function () { };
+
+            function decrementCounter() {
+                onUpdateStatus(seconds);
+                if (seconds === 0) {
+                    stopCounter();
+                    onCounterEnd();
+                    return;
+                }
+                seconds--;
+            };
+
+            function startCounter() {
+                onCounterStart();
+                clearInterval(timer);
+                timer = 0;
+                decrementCounter();
+                timer = setInterval(decrementCounter, 1000);
+            };
+
+            function stopCounter() {
+                clearInterval(timer);
+            };
+
+            return {
+                start: function () {
+                    startCounter();
+                },
+                stop: function () {
+                    stopCounter();
+                }
+            }
+        };
+
+        var countdown = new Counter({
+            // number of seconds to count down
+            seconds: 1200,
+
+            onCounterStart: function () {
+                // show pop up with a message
+            },
+
+            // callback function for each second
+            onUpdateStatus: function (second) {
+                // change the UI that displays the seconds remaining in the timeout
+                $("#divSessionTimer").text(SecondsTimeSpanToHMS(second));
+            },
+            // callback function for final action after countdown
+            onCounterEnd: function () {
+                // show message that session is over, perhaps redirect or log out
+                window.location.replace("../sessionTimeout.aspx")
+            }
+        });
+        countdown.start();
+
+        function SecondsTimeSpanToHMS(s) {
+
+            var m = Math.floor(s / 60); //Get remaining minutes
+            s -= m * 60;
+            return (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s); //zero padding on minutes and seconds
+        }
+    </script>
+    <style>
+        /* START TOOLTIP STYLES */
+        [tooltip] {
+            position: relative; /* opinion 1 */
+        }
+
+            /* Applies to all tooltips */
+            [tooltip]::before,
+            [tooltip]::after {
+                text-transform: none; /* opinion 2 */
+                font-size: .9em; /* opinion 3 */
+                line-height: 1;
+                user-select: none;
+                pointer-events: none;
+                position: absolute;
+                display: none;
+                opacity: 0;
+            }
+
+            [tooltip]::before {
+                content: '';
+                border: 5px solid transparent; /* opinion 4 */
+                z-index: 1001; /* absurdity 1 */
+            }
+
+            [tooltip]::after {
+                content: attr(tooltip); /* magic! */
+                /* most of the rest of this is opinion */
+                font-family: Helvetica, sans-serif;
+                text-align: center;
+                /* 
+    Let the content set the size of the tooltips 
+    but this will also keep them from being obnoxious
+    */
+                min-width: 3em;
+                max-width: 21em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 1ch 1.5ch;
+                border-radius: .3ch;
+                box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+                background: #333;
+                color: #fff;
+                z-index: 1000; /* absurdity 2 */
+            }
+
+            /* Make the tooltips respond to hover */
+            [tooltip]:hover::before,
+            [tooltip]:hover::after {
+                display: block;
+            }
+
+        /* don't show empty tooltips */
+        [tooltip='']::before,
+        [tooltip='']::after {
+            display: none !important;
+        }
+
+        /* FLOW: UP */
+        [tooltip]:not([flow])::before,
+        [tooltip][flow^="up"]::before {
+            bottom: 100%;
+            border-bottom-width: 0;
+            border-top-color: #333;
+        }
+
+        [tooltip]:not([flow])::after,
+        [tooltip][flow^="up"]::after {
+            bottom: calc(100% + 5px);
+        }
+
+        [tooltip]:not([flow])::before,
+        [tooltip]:not([flow])::after,
+        [tooltip][flow^="up"]::before,
+        [tooltip][flow^="up"]::after {
+            left: 50%;
+            transform: translate(-50%, -.5em);
+        }
+
+        /* FLOW: DOWN */
+        [tooltip][flow^="down"]::before {
+            top: 100%;
+            border-top-width: 0;
+            border-bottom-color: #333;
+        }
+
+        [tooltip][flow^="down"]::after {
+            top: calc(100% + 5px);
+        }
+
+        [tooltip][flow^="down"]::before,
+        [tooltip][flow^="down"]::after {
+            left: 50%;
+            transform: translate(-50%, .5em);
+        }
+
+        /* FLOW: LEFT */
+        [tooltip][flow^="left"]::before {
+            top: 50%;
+            border-right-width: 0;
+            border-left-color: #333;
+            left: calc(0em - 5px);
+            transform: translate(-.5em, -50%);
+        }
+
+        [tooltip][flow^="left"]::after {
+            top: 50%;
+            right: calc(100% + 5px);
+            transform: translate(-.5em, -50%);
+        }
+
+        /* FLOW: RIGHT */
+        [tooltip][flow^="right"]::before {
+            top: 50%;
+            border-left-width: 0;
+            border-right-color: #333;
+            right: calc(0em - 5px);
+            transform: translate(.5em, -50%);
+        }
+
+        [tooltip][flow^="right"]::after {
+            top: 50%;
+            left: calc(100% + 5px);
+            transform: translate(.5em, -50%);
+        }
+
+        /* KEYFRAMES */
+        @keyframes tooltips-vert {
+            to {
+                opacity: .9;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        @keyframes tooltips-horz {
+            to {
+                opacity: .9;
+                transform: translate(0, -50%);
+            }
+        }
+
+        /* FX All The Things */
+        [tooltip]:not([flow]):hover::before,
+        [tooltip]:not([flow]):hover::after,
+        [tooltip][flow^="up"]:hover::before,
+        [tooltip][flow^="up"]:hover::after,
+        [tooltip][flow^="down"]:hover::before,
+        [tooltip][flow^="down"]:hover::after {
+            animation: tooltips-vert 300ms ease-out forwards;
+        }
+
+        [tooltip][flow^="left"]:hover::before,
+        [tooltip][flow^="left"]:hover::after,
+        [tooltip][flow^="right"]:hover::before,
+        [tooltip][flow^="right"]:hover::after {
+            animation: tooltips-horz 300ms ease-out forwards;
+        }
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="g-sidenav-show  bg-gray-200">
+    <form id="form1" runat="server" autocomplete="off">
+        <main class="main-content position-relative max-height-vh-100 h-100">
+            <!-- Navbar -->
+            <nav class="navbar navbar-main navbar-expand-lg px-0 shadow-none border-0 " id="navbarBlur" data-scroll="true" style="background: #074886 !important; color: white;">
+                <div class="container-fluid py-1 px-3">
+                    <nav aria-label="breadcrumb">
+                        <h6 class="font-weight-bolder mb-0 text-white">Starbus* | Control Room |
+                            <asp:Label ID="lblHeaderText" runat="server" Text="Dashboard"></asp:Label></h6>
+                    </nav>
+                    <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                        <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                            <ol class="breadcrumb bg-transparent mb-0">
+
+  <li class="ps-5"> 
+                                    <asp:LinkButton ID="LinkButton1"  href="../Auth/UserManuals/Control Room/Help Document for Control Room.pdf" target="_blank" ForeColor="White" OnClick="lbtnHome_Click" runat="server" ToolTip="Dashboard"><i class="ni ni-ungroup text-white"></i> Download Manual</asp:LinkButton>
+                                </li>
+                                <li class="ps-5">
+                                    <asp:LinkButton ID="lbtnHome" ForeColor="White" OnClick="lbtnHome_Click" runat="server" ToolTip="Dashboard"><i class="ni ni-ungroup text-white"></i> Dashboard</asp:LinkButton>
+                                </li>
+
+                                <li class="ps-5">
+                                    <asp:LinkButton ID="lbtnChangePass" ForeColor="White" runat="server" ToolTip="Change Password" OnClick="lbtnChangePass_Click"><i class="ni ni-key-25 text-white"></i> Change Password</asp:LinkButton>
+                                </li>
+                                <li class="ps-5">
+
+                                    <asp:LinkButton ID="lbtnLogout" Visible="true" ForeColor="White" runat="server" OnClick="lbtnLogout_Click" ToolTip="Logout"><i class="fa fa-user-lock text-white"></i></asp:LinkButton>
+
+                                </li>
+
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="container-fluid py-4">
+                <asp:HiddenField ID="hidtoken" runat="server" />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <footer class="footer py-4  ">
+                    <div class="container-fluid">
+                        <div class="row align-items-center justify-content-lg-between">
+                            <div class="col-lg mb-lg-0 mb-4">
+                                <div class="copyright text-center text-sm text-muted text-lg-start">
+                                    Managed and maintained by <b>
+                                        <asp:Label ID="lblManagedBy" runat="server" Text="NA"></asp:Label></b>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto">
+                                <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                                    <li class="nav-item">Powered by <a href="https://www.nic.in/" target="_blank">
+                                        <img src="../images/niclogo1.png" alt="NIC" height="40px" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="row">
+                    <cc1:ModalPopupExtender ID="mpConfirmationLogout" runat="server" PopupControlID="pnlConfirmation"
+                        CancelControlID="lbtnNoConfirmation" TargetControlID="Button4" BackgroundCssClass="ModalPopupBG">
+                    </cc1:ModalPopupExtender>
+                    <asp:Panel ID="pnlConfirmation" runat="server" Style="position: fixed;width:400px">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title text-left mb-0">Please Confirm
+                                </h4>
+                            </div>
+                            <div class="card-body text-left pt-2" style="min-height: 100px">
+                                <asp:Label ID="lblConfirmation" runat="server" Text="Are you sure, You want to logout?"></asp:Label>
+                                <div style="width: 100%; margin-top: 20px; text-align: right;">
+                                    <asp:LinkButton ID="lbtnYesConfirmation" runat="server" OnClick="lbtnYesConfirmation_Click" CssClass="btn btn-success btn-sm"> <i class="fa fa-check"></i> Yes </asp:LinkButton>
+                                    <asp:LinkButton ID="lbtnNoConfirmation" runat="server" OnClick="lbtnNoConfirmation_Click" CssClass="btn btn-danger btn-sm ml-2"> <i class="fa fa-times"></i> No </asp:LinkButton>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="visibility: hidden;">
+                            <asp:Button ID="Button4" runat="server" Text="" />
+                        </div>
+                    </asp:Panel>
+                </div>
+            </div>
+            <%-- <div class="row">
+                <cc1:ModalPopupExtender ID="mpchnagePass" runat="server" PopupControlID="pnlchangepass" TargetControlID="Button9"
+                    CancelControlID="LinkButton75" BackgroundCssClass="modalBackground">
+                </cc1:ModalPopupExtender>--%>
+            <%--<asp:Panel ID="pnlchangepass" runat="server" Style="position: fixed;">
+                    <div class="modal-content mt-5">
+                        <div class="modal-header">
+                            <div class="col-md-10">
+                                <h3 class="m-0">Change Password</h3>
+
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <asp:LinkButton ID="LinkButton75" runat="server" UseSubmitBehavior="false" Style="color: Red; cursor: pointer;"><i class="fa fa-times fa-2x"></i></asp:LinkButton>
+
+                            </div>
+
+                        </div>
+                        <div class="modal-body p-0">
+                            <embed src="changepass.aspx" style="height: 65vh; width: 70vw" />
+                        </div>
+                    </div>
+                    <br />
+                    <div style="visibility: hidden;">
+                        <asp:Button ID="Button9" runat="server" Text="" />
+                    </div>
+                </asp:Panel>--%>
+            <%-- </div>--%>
+            <div class="row">
+                <cc1:ModalPopupExtender ID="mpGrievance" runat="server" PopupControlID="pnlmpGrievance" TargetControlID="btnOpenmpGrievance"
+                    CancelControlID="lbtnClosempGrievance" BackgroundCssClass="ModalPopupBG">
+                </cc1:ModalPopupExtender>
+                <asp:Panel ID="pnlmpGrievance" runat="server" Style="position: fixed;">
+                    <div class="modal-content  modal-dialog mt-3" style="width: 70vw;">
+                        <div class="card">
+                            <div class="card-header py-3">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="m-0">Change Password</h3>
+                                    </div>
+                                    <div class="col-auto">
+                                        <asp:LinkButton ID="lbtnClosempGrievancee" runat="server" Style="color: Red; cursor: pointer;"><i class="fa fa-times fa-2x"></i></asp:LinkButton>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body p-2">
+                                <embed src="changepass.aspx" style="height: 60vh; width: 100%" />
+                                <%--  <asp:Literal ID="eDash" runat="server"></asp:Literal>--%>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div style="visibility: hidden;">
+                        <asp:Button ID="btnOpenmpGrievance" runat="server" Text="" />
+                        <asp:Button ID="lbtnClosempGrievance" runat="server" Text="" />
+                    </div>
+                </asp:Panel>
+            </div>
+        </main>
+
+    </form>
+    <!--   Core JS Files   -->
+    <script src="dashAssests/js/core/popper.min.js"></script>
+    <script src="dashAssests/js/core/bootstrap.min.js"></script>
+    <script src="dashAssests/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="dashAssests/js/plugins/smooth-scrollbar.min.js"></script>
+
+    <script src="dashAssests/js/material-dashboard.min.js?v=3.0.4"></script>
+</body>
+</html>
+

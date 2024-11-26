@@ -1,0 +1,199 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="trvlrMaster.master.cs" Inherits="traveller_trvlrMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Starbus APSTS online ticket booking service of Arunachal Pradesh State Transport Services, Govt of Arunachal Pradesh" />
+    <meta name="author" content="Starbus* APSTS" />
+    <meta name="keywords" content="Starbus apsts, APSTS, Arunachal Pradesh State Transport Services, Book Ticket ,Cancel Ticket , Govt of Arunachal Pradesh , Online Bus Services, Seatavailablity, Bus Pass, Agent booking, Common service Center Booking" />
+    <title>Starbus* MSTS</title>
+    <!-- Favicon -->
+     <link rel="icon" href="../Logo/Favicon.png" type="image/png" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css" />
+    <!-- Page plugins -->
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css" />
+    <link href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <%--<link href="../assets/css/common.css" rel="stylesheet" />--%>
+    <script type="text/javascript">
+        function DisableBackButton() {
+            window.history.forward()
+        }
+        DisableBackButton();
+        window.onload = DisableBackButton;
+        window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+        window.onunload = function () { void (0) }
+    </script>
+    <style>
+        .input-group-prepend .btn, .input-group-append .btn {
+            position: relative;
+            z-index: 0;
+        }
+
+      
+        .ModalPopupBackground {
+            height: 100%;
+            background-color: #EBEBEB;
+            filter: alpha(opacity=70);
+            opacity: 0.7;
+        }
+
+        input[type="checkbox"] {
+            width: 15px; /*Desired width*/
+            height: 15px; /*Desired height*/
+        }
+
+        input[type="radio"] {
+            width: 15px; /*Desired width*/
+            height: 15px; /*Desired height*/
+        }
+
+       
+  
+      
+    </style>
+    <link href="../css/paging.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="HideLoading()">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="main-content" id="panel">
+
+            <%
+                sbLoaderNdPopup dd = new sbLoaderNdPopup();
+                string loader = dd.getLoaderHtml();
+                Response.Write(loader);
+            %>
+
+            <!-- Topnav -->
+            <nav class="navbar navbar-top navbar-expand navbar-dark border-bottom" style="background-color: #021952 !important;">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="border-right pr-2" style="border-color: rgb(255 255 225 / 59%) !important">
+                                <h3 class="mb-0 text-white">StarBus*</h3>
+                            </div>
+                            <div class="pl-2">
+                                <h3 class="mb-0 text-white">
+                                    <asp:Label runat="server" ID="lblModuleName"></asp:Label>
+                                </h3>
+                            </div>
+                            <div class="pl-2">
+                                <img src="../Logo/DeptLogo.png" width="50px" style=" background-color: white !important ;border-radius: 50% !important ;">
+                                <span class="utc"><a href="#" class=" pt12">
+                                    <asp:Label runat="server" ID="lbldeptname"></asp:Label>
+                                    <span class="sty1">VERSION 
+
+                                        <asp:Label runat="server" ID="lblversion"></asp:Label>
+                                    </span></a></span>
+                            </div>
+                        </div>
+
+                        <!-- Navbar links -->
+                        <ul class="navbar-nav  align-items-center  ml-md-auto">
+                            <li class="nav-item">
+                                <a href="" class="org2-top"><i class="flaticon-call"></i>+91  <asp:Label runat="server" ID="lbltollfree"></asp:Label></a>
+                            </li>
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Any Query ?
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Ticket Booking</a>
+                                    <a class="dropdown-item" href="#">Track My Bus</a>
+                                    <a class="dropdown-item" href="ticketCancel.aspx">Cancellation / Refund</a>
+                                    <a class="dropdown-item" href="#">Travel Related Policies</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav align-items-center    ml-auto ml-md-0">
+                            <li class="nav-item ">
+                                <a class="nav-link pr-0" href="Dashboard.aspx" role="button" data-toggle="tooltip" data-placement="bottom" title="Go To Home">
+                                    <div class="media align-items-center">
+                                        <span class="avatar avatar-sm rounded-circle bg-transparent">
+                                            <i class="fa fa-home"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="media align-items-center" role="button" data-toggle="tooltip" data-placement="bottom" title="User">
+                                        <span class="avatar avatar-sm rounded-circle bg-transparent">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu  dropdown-menu-right ">
+                                    <div class="dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Welcome!</h6>
+                                    </div>
+                                    <div class="ml-3 mb-3">
+                                        <asp:Label ID="lblUserID" runat="server" Text="PA001"></asp:Label>
+                                    </div>
+                                    <a href="profile.aspx" class="dropdown-item">
+                                        <i class="ni ni-collection"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                    <a href="grievance.aspx" class="dropdown-item">
+                                        <i class="fa fa-camera-retro"></i>
+                                        <span>Grievance</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="logout.aspx" class="dropdown-item">
+                                        <i class="ni ni-user-run"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           <div class="container-fluid" style="bottom: 0; position: fixed;background-color:#e6e6e6fc;">
+				<footer>
+					<div class="row align-items-center justify-content-lg-between  " style="width: 100vw;position: relative;margin-left:-30px;">
+						<div class="col-lg-8 ">
+							<div class="copyright text-center  text-lg-left ">
+								&copy; All Copyright 2022, StarBus* NIC | Owned & Maintained by : <asp:Label runat="server" ID="lbldepartmentname"></asp:Label>  
+           
+							</div>
+						</div>
+						<div class="col-lg-4 no-space text-right">
+							<img alt="Image placeholder" src="../assets/img/footer-nic.png">
+						</div>
+					</div>
+				</footer>
+			</div>
+        </div>
+    </form>
+
+    <script src="../assets/js/jquery-n.js"></script>
+    <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+    <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+    <!-- Optional JS -->
+    <script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+    <script src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <!-- Argon JS -->
+    <script src="../assets/js/argon.js?v=1.2.0"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+Log Entry : 
+03/11/2024 15:47:59
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 15:47:59
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"1003202400011P7","amount":30500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 15:47:59
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Parameter 'p_data_providerrefid' must have its value set
+__________________________
+
+Log Entry : 
+03/11/2024 15:47:59
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 15:47:59
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"1003202400011P4","amount":5500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 15:47:59
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Parameter 'p_data_providerrefid' must have its value set
+__________________________
+
+Log Entry : 
+03/11/2024 15:51:51
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 15:51:51
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"1003202400011P4","amount":5500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 15:51:52
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 15:51:52
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 15:51:52
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"1003202400011P7","amount":30500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 15:51:52
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:10
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:11
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"0603202400022P15","amount":69000,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:11
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:11
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:11
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"0703202400012P10","amount":103500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:11
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:11
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:11
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"0803202400031P3","amount":103500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 16:02:11
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:34
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"0703202400032P23","amount":190500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"0703202400032P30","providerReferenceId":"T2403091004278563660673","amount":54000,"paymentState":"FAILED","payResponseCode":"UPI_BACKBONE_ERROR"}}
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"0803202400051P4","amount":54000,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0903202400021P1","providerReferenceId":"T2403091948282969984890","amount":48000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS"}}
+__________________________
+
+Log Entry : 
+03/11/2024 16:04:35
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________

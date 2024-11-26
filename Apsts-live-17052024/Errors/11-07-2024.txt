@@ -1,0 +1,70 @@
+
+Log Entry : 
+07/11/2024 09:45:01
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 10/07/2024 05:57:15 PM
+__________________________
+
+Log Entry : 
+07/11/2024 09:47:38
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 09:43:41 AM
+__________________________
+
+Log Entry : 
+07/11/2024 09:55:11
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 09:45:45 AM
+__________________________
+
+Log Entry : 
+07/11/2024 09:56:09
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 09:54:10 AM
+__________________________
+
+Log Entry : 
+07/11/2024 10:26:07
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 10:22:01 AM
+__________________________
+
+Log Entry : 
+07/11/2024 10:32:55
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.SelectServicesActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.apsts.apstscounterbooking.response.searchServices.SearchServicesResponse.getCode()' on a null object reference, searchBusServices APSTS0050, 11/07/2024 10:24:06 AM
+__________________________
+
+Log Entry : 
+07/11/2024 10:35:36
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 10:32:10 AM
+__________________________
+
+Log Entry : 
+07/11/2024 10:41:59
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 10:33:47 AM
+__________________________
+
+Log Entry : 
+07/11/2024 10:49:04
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OnlineTicketBooking.SeatLayoutActivity| Error Message:setSpanCount, java.lang.IllegalArgumentException: Span count should be at least 1. Provided 0, busSeatLayoutServices APSTS0050, 11/07/2024 10:34:05 AM
+__________________________
+
+Log Entry : 
+07/11/2024 10:57:54
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 10:40:14 AM
+__________________________
+
+Log Entry : 
+07/11/2024 11:06:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 10:47:14 AM
+__________________________
+
+Log Entry : 
+07/11/2024 11:29:05
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:drawLeftAndRightText, java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference,  APSTS0050, 11/07/2024 10:56:04 AM
+__________________________
+
+Log Entry : 
+07/11/2024 23:42:10
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingConfirmationActivity| Error Message:getTicketRecipes, java.lang.NullPointerException: Attempt to invoke virtual method 'void com.apsts.apstscounterbooking.utils.CommonMethods.enterCatchOrErrorLog(java.lang.String, java.lang.String, java.lang.String, java.lang.String)' on a null object reference, ConfirmCurrntTicket APSTS0050, 11/07/2024 11:36:58 PM
+__________________________
+
+Log Entry : 
+07/11/2024 23:44:20
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingConfirmationActivity| Error Message:getTicketRecipes, java.lang.NullPointerException: Attempt to invoke virtual method 'void com.apsts.apstscounterbooking.utils.CommonMethods.enterCatchOrErrorLog(java.lang.String, java.lang.String, java.lang.String, java.lang.String)' on a null object reference, ConfirmCurrntTicket APSTS0050, 11/07/2024 11:40:35 PM
+__________________________

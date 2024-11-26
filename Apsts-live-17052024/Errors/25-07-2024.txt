@@ -1,0 +1,10 @@
+
+Log Entry : 
+07/25/2024 15:59:07
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/reports/rpt_TE1.aspx|  Error Code :rpt_TE1.aspx-004| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+07/25/2024 16:00:13
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/reports/rpt_P7.aspx|  Error Code :rpt_P7.aspx-005| Error Message:Thread was being aborted.
+__________________________

@@ -1,0 +1,30 @@
+
+Log Entry : 
+07/31/2024 15:46:16
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/CSPRegistration.aspx|  Error Code :sbSecurity-M2| Error Message:Object reference not set to an instance of an object.
+__________________________
+
+Log Entry : 
+07/31/2024 16:25:30
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/AddLeave.aspx|  Error Code :AddLeave.aspx-03| Error Message:DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'leave_type_'.
+__________________________
+
+Log Entry : 
+07/31/2024 16:28:21
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/AddLeave.aspx|  Error Code :AddLeave.aspx-03| Error Message:DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'leave_type_'.
+__________________________
+
+Log Entry : 
+07/31/2024 16:28:29
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/AddLeave.aspx|  Error Code :AddLeave.aspx-03| Error Message:DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'leave_type_'.
+__________________________
+
+Log Entry : 
+07/31/2024 16:31:00
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/AddLeave.aspx|  Error Code :AddLeave.aspx-03| Error Message:DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'leave_type_'.
+__________________________
+
+Log Entry : 
+07/31/2024 17:13:04
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/AddLeave.aspx|  Error Code :AddLeave.aspx-04| Error Message:RegisterForEventValidation can only be called during Render();
+__________________________

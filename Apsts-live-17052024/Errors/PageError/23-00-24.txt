@@ -1,0 +1,30 @@
+
+Log Entry : 
+03/23/2024 08:12:51
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"2203202400041P2","providerReferenceId":"T2403230812138434263208","amount":108000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0068","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+03/23/2024 08:12:51
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+03/23/2024 08:13:06
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"2203202400041P1","amount":108000,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+03/23/2024 08:13:06
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+03/23/2024 08:15:12
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"2203202400041P6","providerReferenceId":"T2403230814381488115055","amount":54000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0068","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+03/23/2024 08:15:12
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________

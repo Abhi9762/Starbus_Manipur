@@ -1,0 +1,11 @@
+
+Log Entry : 
+05/24/2024 14:40:09
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/CntrSeatSelection.aspx|  Error Code :CntrSeatSelection.aspx-0004| Error Message:Thread was being aborted.
+__________________________
+
+Log Entry : 
+05/24/2024 15:22:30
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/PAdminConcessionPolicy.aspx|  Error Code :PAdminConcessionPolicy.aspx-0004| Error Message:'ddlBusPass' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+__________________________

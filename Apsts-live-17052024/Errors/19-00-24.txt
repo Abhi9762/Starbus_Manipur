@@ -1,0 +1,5 @@
+
+Log Entry : 
+05/19/2024 09:49:05
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/Auth/tkAttendanceManagement.aspx|  Error Code :SysAdmETM-E1| Error Message:Thread was being aborted.
+__________________________

@@ -1,0 +1,633 @@
+﻿using System;
+using System.Xml;
+using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Xml.Linq;
+using System.Data;
+using Npgsql;
+using System.IO;
+
+public partial class Auth_PAdminPhotoGallery : BasePage 
+{
+    XmlDocument doc = new XmlDocument();
+    sbValidation _validation = new sbValidation();
+    private NpgsqlCommand MyCommand;
+    DataTable dt = new DataTable();
+    private sbBLL bll = new sbBLL();
+    private sbCommonFunc _common = new sbCommonFunc();
+    sbSecurity _security = new sbSecurity();
+    sbLoaderNdPopup _popup = new sbLoaderNdPopup();
+    [System.Runtime.InteropServices.DllImport("urlmon.dll")]
+    public static extern int FindMimeFromData(IntPtr pBC, [MarshalAs(UnmanagedType.LPWStr)] string pwzUrl, [MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.I1, SizeParamIndex = 3)] byte[] pBuffer, int cbSize, [MarshalAs(UnmanagedType.LPWStr)] string pwzMimeProposed, int dwMimeFlags, [MarshalAs(UnmanagedType.U4)] ref int ppwzMimeOut, int dwReserved);
+    byte[] PhotoImage = null;
+
+    
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+          
+            Session["_moduleName"] = "Photo Gallery images/Category";
+            loadCategoryData();
+            loadPhotoData();
+
+        }
+    }
+
+    #region "Methods"
+    private void Errormsg(string msg)
+    {
+        string popup = _popup.modalPopupSmall("W", "Please Note", msg, "Close");
+        Response.Write(popup);
+    }
+    private void successmsg(string msg)
+    {
+        string popup = _popup.modalPopupSmall("S", "Success", msg, "OK");
+        Response.Write(popup);
+    }
+    public void confirmmsg(string message)
+    {
+        lblConfirmation.Text = message;
+        mpConfirmation.Show();
+    }
+
+    #region "Category"
+    private bool validValue()//M1
+    {
+        try
+        {
+            int msgcnt = 0;
+            string msg = "";
+            if (_validation.IsValidString(tbCategoryName.Text, 3, tbCategoryName.MaxLength) == false)
+            {
+                msgcnt = msgcnt + 1;
+                msg = msg + msgcnt.ToString() + ". Category Name.<br>";
+            }
+            if (ddlstatus.SelectedIndex == 0)
+            {
+                msgcnt = msgcnt + 1;
+                msg = msg + msgcnt.ToString() + ". Please Select Status.<br>";
+            }
+            if (msgcnt > 0)
+            {
+                Errormsg(msg);
+            }
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _common.ErrorLog("PAdminPhotoGallery-M1", ex.Message.ToString());
+            Errormsg(ex.Message.ToString());
+            return false;
+        }
+
+    }
+    private void saveCategory()//M2
+    {
+        try
+        {
+            string IPAddress = HttpContext.Current.Request.UserHostAddress;
+            NpgsqlCommand MyCommand = new NpgsqlCommand();
+            MyCommand.Parameters.Clear();
+            MyCommand.Parameters.AddWithValue("@StoredProcedure", "auth.f_insertupdate_photocategory");
+            MyCommand.Parameters.AddWithValue("p_action", Session["Action"].ToString());
+            MyCommand.Parameters.AddWithValue("p_categyid", Convert.ToInt64(Session["id"].ToString()));
+            MyCommand.Parameters.AddWithValue("p_categoryname", tbCategoryName.Text);
+            MyCommand.Parameters.AddWithValue("p_status", ddlstatus.SelectedValue);
+            MyCommand.Parameters.AddWithValue("p_updatedby", Session["_UserCode"].ToString());
+            MyCommand.Parameters.AddWithValue("p_ipaddress", IPAddress);
+            string Mresult = bll.UpdateAll(MyCommand);
+            if (Mresult == "Success")
+            {
+                successmsg("Photo Category have been Successfully Saved !");
+                loadCategoryData();
+                ResetCategory();
+            }
+            else
+            {
+                Errormsg("Error Occured!");
+            }
+        }
+        catch (Exception ex)
+        {
+            _common.ErrorLog("PAdminPhotoGallery-M2", ex.Message.ToString());
+            Errormsg(ex.Message.ToString());
+        }
+    }
+    private void loadCategoryData()//M3
+    {
+        try
+        {
+            MyCommand = new NpgsqlCommand();
+            DataTable dt = new DataTable();
+            MyCommand.Parameters.Clear();
+            MyCommand.Parameters.AddWithValue("@StoredProcedure", "auth.f_get_photocategory");
+            dt = bll.SelectAll(MyCommand);
+            if (dt.TableName == "Success")
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    ddlCategoryName.Items.Clear();
+                    ddlCategoryName.DataSource = dt;
+                    ddlCategoryName.DataTextField = "category_name";
+                    ddlCategoryName.DataValueField = "category_id";
+                    ddlCategoryName.DataBind();
+                    ddlCategoryName.Items.Insert(0, "SELECT");
+                    ddlCategoryName.Items[0].Value = "0";
+                    ddlCategoryName.SelectedIndex = 0;
+
+
+
+                    ddlImageList.Items.Clear();
+                    ddlImageList.DataSource = dt;
+                    ddlImageList.DataTextField = "category_name";
+                    ddlImageList.DataValueField = "category_id";
+                    ddlImageList.DataBind();
+                    ddlImageList.Items.Insert(0, "All");
+                    ddlImageList.Items[0].Value = "0";
+                    ddlImageList.SelectedIndex = 0;
+
+
+                    gvCategoryList.DataSource = dt;
+                    gvCategoryList.DataBind();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            _common.ErrorLog("PAdminPhotoGallery-M3", ex.Message.ToString());
+            Errormsg(ex.Message.ToString());
+        }
+    }
+    private void ResetCategory()
+    {
+        lbtnSaveCategory.Visible = true;
+        lbtnPStatusreset.Visible = true;
+        lbtnUpdateCategory.Visible = false;
+        lblSaveCategory.Visible = true;
+        lblUpdateCategory.Visible = false;
+        tbCategoryName.Text = "";
+        ddlstatus.SelectedIndex = 0;
+    }
+    private void updateXml()//M4
+    {
+        try
+        {
+            string idd = Session["id"].ToString();
+            string categorys = Session["category"].ToString();
+            XmlDocument doc = new XmlDocument();
+            doc.Load(Server.MapPath("../CommonDataPhoto.xml"));
+
+            XmlNode category = doc.SelectSingleNode("Data/Photo[@id=@id]/Category");
+            category.InnerText = tbCategoryName.Text;
+            XmlNode status = doc.SelectSingleNode("Data/Photo[@id=@id]/Status");
+            status.InnerText = ddlstatus.Text;
+            doc.Save(Server.MapPath("../CommonDataPhoto.xml"));
+            successmsg("Update Successfully !");
+
+            loadCategoryData();
+            ResetCategory();
+        }
+        catch (Exception ex)
+        {
+            _common.ErrorLog("PAdminPhotoGallery-M4", ex.Message.ToString());
+            Errormsg(ex.Message.ToString());
+        }
+    }
+
+    #endregion
+
+    #region "Photo Upload"  
+    public bool checkFileExtention(System.Web.UI.WebControls.FileUpload fuFileUpload)
+    {
+        try
+        {
+            decimal size = Math.Round((Convert.ToDecimal(fuFileUpload.PostedFile.ContentLength) / Convert.ToDecimal(1024)), 2);
+            System.Drawing.Image img = System.Drawing.Image.FromStream(fuFileUpload.PostedFile.InputStream);
+            int height = img.Height;
+            int width = img.Width;
+            if (size > 2048)
+            {
+                Errormsg("Image size must not exceed 2 MB.");
+
+            }
+
+            bool fileExtensionOK = false;
+            string fileExtension;
+            fileExtension = System.IO.Path.GetExtension(fuFileUpload.FileName).ToLower();
+            string[] allowedExtensions = new[] { ".jpg", ".png", ".jpeg" };
+            for (int i = 0; i <= allowedExtensions.Length - 1; i++)
+            {
+                if (fileExtension == allowedExtensions[i])
+                    fileExtensionOK = true;
+            }
+            return fileExtensionOK;
+        }
+        catch (Exception)
+        {
+            return default(Boolean);
+        }
+    }
+    public static string GetMimeDataOfFile(HttpPostedFile file)
+    {
+        IntPtr mimeout = default(IntPtr);
+        int MaxContent = Convert.ToInt32(file.ContentLength);
+        if (MaxContent > 4096)
+        {
+            MaxContent = 4096;
+        }
+        byte[] buf = new byte[MaxContent - 1 + 1];
+        file.InputStream.Read(buf, 0, MaxContent);
+        int MimeSampleSize = 256;
+        string mimeType = System.Web.MimeMapping.GetMimeMapping(file.FileName);
+        return mimeType;
+
+
+    }
+    public byte[] PHOTOconvertTObyte(System.Web.UI.WebControls.FileUpload fuFileUpload)
+    {
+        try
+        {
+            int intFileLength = 0;
+            byte[] byteData = null;
+            if (fuFileUpload.HasFile)
+            {
+                if (checkFileExtention(fuFileUpload) == true)
+                {
+                    intFileLength = fuFileUpload.PostedFile.ContentLength;
+                    byteData = new byte[intFileLength + 1];
+                    byteData = fuFileUpload.FileBytes;
+                }
+                string _fileFormat = GetMimeDataOfFile(fuFileUpload.PostedFile);
+                if ((_fileFormat == "image/pjpeg") | (_fileFormat == "image/x-png"))
+                {
+                }
+                else
+                {
+                    byteData = new byte[intFileLength + 1];
+                    byteData = fuFileUpload.FileBytes;
+                }
+            }
+            else
+            {
+                intFileLength = fuFileUpload.PostedFile.ContentLength;
+                byteData = new byte[intFileLength + 1];
+                byteData = fuFileUpload.FileBytes;
+            }
+            return byteData;
+        }
+        catch (Exception ex)
+        {
+            return null;
+        }
+    }
+    private bool validPhotoGallery()
+    {
+        int msgcnt = 0;
+        string msg = "";
+
+        if (ddlCategoryName.SelectedValue == "")
+        {
+
+            msgcnt = msgcnt + 1;
+            msg = msg + msgcnt.ToString() + ". Please Select Category.<br>";
+        }
+
+        if (tbTitle.Text == "")
+        {
+            msgcnt = msgcnt + 1;
+            msg = msg + msgcnt.ToString() + ". Please enter  title.<br>";
+
+        }
+        else if (tbTitle.Text.Length < 3)
+        {
+            msgcnt = msgcnt + 1;
+            msg = msg + msgcnt.ToString() + ". Please enter valid title (min 3 char).<br>";
+
+        }
+        if (Session["Images"] == null)
+        {
+            msgcnt = msgcnt + 1;
+            msg = msg + msgcnt.ToString() + ". Select Image.<br>";
+        }
+        if (msgcnt > 0)
+        {
+            Errormsg(msg);
+            return false;
+        }
+        return true;
+    }
+    private void saveImages()//M5
+    {
+        try
+        {
+            byte[] Images = null;
+            string saveDirectory = "../PhotoGallery/img/";
+            string fileName = ddlCategoryName.SelectedValue.ToString() + "_" + DateTime.Now.ToString("hhmmss") + ".jpg";
+            string fileSavePath = "";
+            fileSavePath = Path.Combine(saveDirectory, fileName);
+            Images = (byte[])Session["Images"];
+            System.IO.File.WriteAllBytes(Server.MapPath(fileSavePath), Images);
+
+            string IPAddress = HttpContext.Current.Request.UserHostAddress;
+            NpgsqlCommand MyCommand = new NpgsqlCommand();
+            MyCommand.Parameters.Clear();
+            MyCommand.Parameters.AddWithValue("@StoredProcedure", "auth.f_insert_photo");
+            MyCommand.Parameters.AddWithValue("p_action", Session["Action"].ToString());
+            MyCommand.Parameters.AddWithValue("p_categyid", Convert.ToInt64(ddlCategoryName.SelectedValue.ToString()));
+            MyCommand.Parameters.AddWithValue("p_imagetitle", tbTitle.Text.ToString());
+            MyCommand.Parameters.AddWithValue("p_imageurl", fileSavePath);
+            MyCommand.Parameters.AddWithValue("p_updatedby", Session["_UserCode"].ToString());
+            MyCommand.Parameters.AddWithValue("p_ipaddress", IPAddress);
+            string Mresult = bll.UpdateAll(MyCommand);
+            if (Mresult == "Success")
+            {
+                successmsg("Photo Category have been Successfully Saved !");
+                ResetPhoto();
+            }
+            else
+            {
+                Errormsg("Error Occured!");
+            }
+        }
+
+        catch (Exception ex)
+        {
+            _common.ErrorLog("PAdminPhotoGallery-M5", ex.Message.ToString());
+            Errormsg(ex.Message.ToString());
+        }
+    }
+    private void ResetPhoto()
+    {
+        loadPhotoData();
+        ddlCategoryName.SelectedIndex = 0;
+        tbTitle.Text = "";
+        lblImage.Visible = false;
+        lblImage.Text = "";
+        Session["Images"] = null;
+    }
+    private void loadPhotoData()
+    {
+        try
+        {
+            MyCommand = new NpgsqlCommand();
+            DataTable dt = new DataTable();
+            MyCommand.Parameters.Clear();
+            MyCommand.Parameters.AddWithValue("@StoredProcedure", "auth.f_get_photo");
+            MyCommand.Parameters.AddWithValue("p_categoryid", Convert.ToInt64(ddlImageList.SelectedValue.ToString()));
+            MyCommand.Parameters.AddWithValue("p_limit", Convert.ToInt32("100"));
+            dt = bll.SelectAll(MyCommand);
+            if (dt.TableName == "Success")
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    rptImageList.DataSource = dt;
+                    rptImageList.DataBind();
+                    rptImageList.Visible = true;
+                    pnlPhotoNoRecord.Visible = false;
+                }
+                else
+                {
+                    rptImageList.Visible = false;
+                    pnlPhotoNoRecord.Visible = true;
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            _common.ErrorLog("PAdminPhotoGallery-M", ex.Message.ToString());
+            Errormsg(ex.Message.ToString());
+        }
+
+    }
+    private void updateImageXml()
+    {
+        try
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(Server.MapPath("../CommonDataPhoto.xml"));
+            XmlNodeList photopath = doc.GetElementsByTagName("photopath");
+            photopath.Item(0).InnerXml = "../PhotoGallery/img/";
+            lblImage.Text = photopath.Item(0).InnerXml;
+            XmlNodeList category = doc.GetElementsByTagName("Category");
+            category.Item(0).InnerXml = ddlCategoryName.Text;
+            XmlNodeList status = doc.GetElementsByTagName("title");
+            status.Item(0).InnerXml = tbTitle.Text;
+            doc.Save(Server.MapPath("../CommonDataPhoto.xml"));
+        }
+        catch (Exception ex)
+        {
+            _common.ErrorLog("PAdminPhotoGallery-M", ex.Message.ToString());
+            Errormsg(ex.Message.ToString());
+        }
+    }
+
+    #endregion
+
+    #endregion
+
+    #region "Events"
+
+    protected void lbtnCtgry_Click(object sender, EventArgs e)
+    {
+        pnlctgryHeading.Visible = true;
+        pnlphotoHeading.Visible = false;
+        pnlctgry.Visible = true;
+        pnlphoto.Visible = false;
+    }
+    protected void lbtnPhotoupload_Click(object sender, EventArgs e)
+    {
+        pnlctgryHeading.Visible = false;
+        pnlphotoHeading.Visible = true;
+        pnlctgry.Visible = false;
+        pnlphoto.Visible = true;
+        loadCategoryData();
+    }
+    protected void lbtnYesConfirmation_Click(object sender, EventArgs e)
+    {
+        if (Session["Action"].ToString() == "S")
+        {
+            Session["id"] = "0";
+            saveCategory();
+        }
+        if (Session["Action"].ToString() == "U")
+        {
+            saveCategory();
+        }
+        if (Session["Action"].ToString() == "P")
+        {
+            saveImages();
+        }
+        if (Session["Action"].ToString() == "D")
+        {
+            DeletePhoto();
+        }
+    }
+
+    private void DeletePhoto()
+    {
+
+      
+        string IPAddress = HttpContext.Current.Request.UserHostAddress;
+        NpgsqlCommand MyCommand = new NpgsqlCommand();
+        MyCommand.Parameters.Clear();
+        MyCommand.Parameters.AddWithValue("@StoredProcedure", "auth.f_delete_photo");
+        MyCommand.Parameters.AddWithValue("p_action", Session["Action"].ToString());
+        MyCommand.Parameters.AddWithValue("p_photoid", Convert.ToInt64(Session["PhotoId"].ToString()));
+        MyCommand.Parameters.AddWithValue("p_updatedby", Session["_UserCode"].ToString());
+        MyCommand.Parameters.AddWithValue("p_ipaddress", IPAddress);
+        string Mresult = bll.UpdateAll(MyCommand);
+        if (Mresult == "Success")
+        {
+            successmsg("Photo have been Successfully Deleted !");
+            var filePath = Server.MapPath(Session["ImgUrl"].ToString());
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath);
+            }
+            ResetPhoto();
+        }
+        else
+        {
+            Errormsg("Error Occured!");
+        }
+
+
+        
+    }
+
+    #region "Category"
+    protected void lbtnSaveCategory_Click(object sender, EventArgs e)
+    {
+        if (validValue() == false)
+        {
+            return;
+        }
+        confirmmsg("Are you sure you want to Save Category?");
+        Session["Action"] = "S";
+    }
+    protected void lbtnUpdateCategory_Click(object sender, EventArgs e)
+    {
+        if (validValue() == false)
+        {
+            return;
+        }
+        confirmmsg("Do you want to Update Category?");
+    }
+    protected void gvCategoryList_PageIndexChanging(object sender, GridViewPageEventArgs e)
+    {
+        gvCategoryList.PageIndex = e.NewPageIndex;
+        loadCategoryData();
+    }
+    protected void gvCategoryList_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        if (e.CommandName == "gvEdit")
+        {
+            GridViewRow row = (GridViewRow)((LinkButton)e.CommandSource).NamingContainer;
+            int i = row.RowIndex;
+            string id = gvCategoryList.DataKeys[row.RowIndex]["category_id"].ToString();
+            string category = gvCategoryList.DataKeys[row.RowIndex]["category_name"].ToString();
+            string status = gvCategoryList.DataKeys[row.RowIndex]["status"].ToString();
+            Session["id"] = id;
+            tbCategoryName.Text = category;
+            ddlstatus.SelectedValue = status;
+            Session["Action"] = "U";
+            lbtnSaveCategory.Visible = false;
+            lbtnPStatusreset.Visible = true;
+            lbtnUpdateCategory.Visible = true;
+            lblSaveCategory.Visible = false;
+            lblUpdateCategory.Visible = true;
+        }
+    }
+    protected void lbtnCategoryhelp_Click(object sender, EventArgs e)
+    {
+        Errormsg("You can add Maximum 8 photos in a Category.");
+
+    }
+    protected void lbtnPStatusreset_Click(object sender, EventArgs e)
+    {
+        ResetCategory();
+    }
+
+    #endregion
+
+    #region "Photo Upload"
+    protected void btnUploadImage_Click(object sender, EventArgs e)
+    {
+
+        if (checkFileExtention(FileUploadImage) == false)
+        {
+            Errormsg("File size must not exceed 2MB.");
+            return;
+        }
+        lblImage.Visible = true;
+        lblImage.Text = FileUploadImage.FileName;
+        Session["Images"] = PHOTOconvertTObyte(FileUploadImage);
+    }
+    protected void lbtnSaveImage_Click(object sender, EventArgs e)
+    {
+        if (validPhotoGallery() == false)
+        {
+            return;
+        }
+        confirmmsg("Do you want to Save Image?");
+        Session["Action"] = "P";
+    }
+    protected void lbtnResetImage_Click(object sender, EventArgs e)
+    {
+        ddlCategoryName.Text = "";
+        tbTitle.Text = "";
+    }
+
+
+
+    //protected void gvImageList_RowCommand(object sender, GridViewCommandEventArgs e)
+    //{
+    //    //if (e.CommandName == "gvDelete")
+    //    //{
+    //    //    GridViewRow row = (GridViewRow)((LinkButton)e.CommandSource).NamingContainer;
+    //    //    int i = row.RowIndex;
+    //    //    string id = gvCategoryList.DataKeys[row.RowIndex]["id"].ToString();
+
+    //    //  //  Session["id"] = id;
+    //    //    Session["Action"] = "Delete";
+    //    //}
+    //}
+    #endregion
+
+    #endregion
+
+    protected void rptImageList_ItemDataBound(object sender, RepeaterItemEventArgs e)
+    {
+        if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+        {
+            Image img = (Image)e.Item.FindControl("img");
+            HiddenField hdphotourl = (HiddenField)e.Item.FindControl("hdphotourl");
+  img.ImageUrl = hdphotourl.Value.ToString();
+           
+        }
+    }
+
+    protected void rptImageList_ItemCommand(object source, RepeaterCommandEventArgs e)
+    {
+        if (e.CommandName == "deletephoto")
+        {
+            HiddenField hdnphotoid = (HiddenField)e.Item.FindControl("hdnphotoid");
+            HiddenField hdphotourl = (HiddenField)e.Item.FindControl("hdphotourl");
+            Session["PhotoId"] = hdnphotoid.Value.ToString();
+            Session["Action"] = "D";
+            Session["ImgUrl"] = hdphotourl.Value.ToString();
+            confirmmsg("Do you want to Delete Image ?");
+        }
+    }
+
+    protected void ddlImageList_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        loadPhotoData();
+    }
+}

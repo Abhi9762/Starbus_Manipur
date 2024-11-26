@@ -1,0 +1,120 @@
+
+Log Entry : 
+07/10/2024 14:53:32
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 3 column 1 path $, API > getAuthentication V462256, 10/07/2024 12:08:52 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:08:27
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 3 column 1 path $, API > getAuthentication V462256, 10/07/2024 12:12:42 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:10:17
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 3 column 1 path $, API > getAuthentication V462256, 10/07/2024 12:18:42 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:12:03
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 3 column 1 path $, API > getAuthentication V462256, 10/07/2024 12:25:04 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:12:05
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 3 column 1 path $, API > getAuthentication V462256, 10/07/2024 12:25:34 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:15:49
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:syntaxError, com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 3 column 1 path $, API > getAuthentication V462256, 10/07/2024 12:28:56 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:15:50
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:read, com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 3 column 1 path $, API > getAuthentication V462256, 10/07/2024 12:34:48 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:23:11
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:onResponse, java.lang.Throwable: Error: 500, API > isAppActive V462256, 10/07/2024 12:36:48 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:30:10
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.apsts.apstscounterbooking.response.isAppActive.IsAppActiveResponse.getCode()' on a null object reference, isAppActive V462256, 10/07/2024 12:37:37 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:30:15
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference, isActiveApp V462256, 10/07/2024 12:43:42 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:31:16
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference, isActiveApp V462256, 10/07/2024 12:58:37 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:31:18
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.SplashActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference, isActiveApp V462256, 10/07/2024 01:00:37 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:31:25
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List com.apsts.apstscounterbooking.response.dashBoardResponse.DashboardResponse.getUser()' on a null object reference, dashboard APSTS0050, 10/07/2024 02:23:54 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:31:33
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List com.apsts.apstscounterbooking.response.dashBoardResponse.DashboardResponse.getUser()' on a null object reference, dashboard APSTS0050, 10/07/2024 02:27:13 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:38:33
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List com.apsts.apstscounterbooking.response.dashBoardResponse.DashboardResponse.getUser()' on a null object reference, dashboard APSTS0050, 10/07/2024 02:35:16 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:38:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List com.apsts.apstscounterbooking.response.dashBoardResponse.DashboardResponse.getUser()' on a null object reference, dashboard APSTS0050, 10/07/2024 02:47:33 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:41:33
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List com.apsts.apstscounterbooking.response.dashBoardResponse.DashboardResponse.getUser()' on a null object reference, dashboard APSTS0050, 10/07/2024 02:48:13 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:41:34
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.AddNewRouteActivity| Error Message:read, com.google.gson.JsonSyntaxException: java.lang.NumberFormatException: For input string: "ARX-0000", API > getBusRoutes APSTS0050, 10/07/2024 03:29:21 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:43:02
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.AddNewRouteActivity| Error Message:read, com.google.gson.JsonSyntaxException: java.lang.NumberFormatException: For input string: "ARX-0000", API > getBusRoutes APSTS0050, 10/07/2024 03:29:54 PM
+__________________________
+
+Log Entry : 
+07/10/2024 15:52:41
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingSeatLayoutActivity| Error Message:parseInt, java.lang.NumberFormatException: null, getLayout APSTS0050, 10/07/2024 03:41:45 PM
+__________________________
+
+Log Entry : 
+07/10/2024 17:04:48
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingSeatLayoutActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference, getConcessionDtls APSTS0050, 10/07/2024 05:00:21 PM
+__________________________
+
+Log Entry : 
+07/10/2024 17:21:24
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.OfflineCounter.CurrentBookingSeatLayoutActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference, getConcessionDtls APSTS0050, 10/07/2024 05:03:40 PM
+__________________________
+
+Log Entry : 
+07/10/2024 17:55:18
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference, CheckTicketStatus APSTS0050, 10/07/2024 05:50:39 PM
+__________________________
+
+Log Entry : 
+07/10/2024 17:58:32
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/wscounteretm.asmx/Error_log|  Error Code :activity.CommonActivity.DashboardActivity| Error Message:onResponse, java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference, CheckTicketStatus APSTS0050, 10/07/2024 05:50:39 PM
+__________________________

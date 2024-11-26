@@ -1,0 +1,305 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mainMasterPage.master" AutoEventWireup="true" CodeFile="BookTicket - Copy.aspx.cs" Inherits="BookTicket" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("[id$=tbFrom]").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        url: "Home.aspx/searchStations",
+                        data: "{'stationText':'" + request.term + "'}",
+                        dataType: "json",
+                        success: function (data) {
+                            response(data.d);
+                        },
+                        error: function (result) {
+                            alert('sdss');
+                        }
+                    });
+                }
+            });
+            $("[id$=tbTo]").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        url: "Home.aspx/searchStations",
+                        data: "{'stationText':'" + request.term + "'}",
+                        dataType: "json",
+                        success: function (data) {
+                            response(data.d);
+                        },
+                        error: function (result) {
+                        }
+                    });
+                }
+            });
+
+            var todayDate = new Date().getDate();
+            var endD = new Date(new Date().setDate(todayDate + 10));
+            var currDate = new Date();
+
+            $('[id*=tbDate]').datepicker({
+                startDate: "dateToday",
+                endDate: endD,
+                changeMonth: true,
+                changeYear: false,
+                format: "dd/mm/yyyy",
+                autoclose: true
+            });
+
+        });
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="midd-bg">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="ctx">All e-Ticket cancellation refunds may process through payment gateway, i.e. passenger may get refund amount in their bank account/card /wallet through which they book ticket.</div>
+
+                    <div class="">
+                        <!-- Bordered tabs-->
+                        <ul id="myTab1" role="tablist" class="nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center">
+                            <li class="nav-item flex-sm-fill">
+                                <a id="home1-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="true" class="nav-link   rounded-0 border active">Reservations </a>
+                            </li>
+                            <li class="nav-item flex-sm-fill">
+                                <a id="profile1-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile1" aria-selected="false" class="nav-link   rounded-0 border">Payment </a>
+                            </li>
+                            <li class="nav-item flex-sm-fill">
+                                <a id="contact1-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact1" aria-selected="false" class="nav-link  rounded-0 border">Cancellations </a>
+                            </li>
+                            <li class="nav-item flex-sm-fill">
+                                <a id="contact1-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact1" aria-selected="false" class="nav-link  rounded-0 border">Refund </a>
+                            </li>
+                        </ul>
+                        <div id="myTab1Content" class="tab-content">
+                            <div id="home1" role="tabpanel" aria-labelledby="home-tab" class="tab-pane  show active">
+                                <div class="leade ">
+
+                                    <div class="left-bg">Can I cancel the Reservations?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="left-bg">When I cancel my ticket?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="left-bg">How to Reschedule Ticket?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div id="profile1" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade">
+                                <div class="leade ">
+
+                                    <div class="left-bg">Can I cancel the Payment?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="left-bg">When I cancel my ticket?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="left-bg">How to Reschedule Ticket?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="contact1" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade  ">
+                                <div class="leade ">
+
+                                    <div class="left-bg">Can I cancel the Cancellations?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="left-bg">When I cancel my ticket?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="left-bg">How to Reschedule Ticket?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div id="contact2" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade  ">
+                                <div class="leade ">
+
+
+                                    <div class="left-bg">Can I cancel the Refund?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="left-bg">When I cancel my ticket?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="left-bg">How to Reschedule Ticket?</div>
+                                    <div class="ctx1">Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing eliteius mod tempor incididunt ut </div>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-outline-warning1">User Guide <i aria-hidden="true" class="fa fa-angle-right"></i></button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End bordered tabs -->
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+                <div class="col-lg-7">
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="org-bg6">Serch and Book </div>
+                        </div>
+                        <div class="col-lg-9 no-space">
+                            <div class="ctx1">Please select From, To station for departure and arrival Stations. Next select the jounary date.</div>
+                        </div>
+
+                    </div>
+                    <div class="tk-bg">
+                        <div class="row">
+                            <div class="col-lg-10 ">
+                                <div class="row">
+                                    <div class="col-lg-6 ">
+                                        <div class="form-group">
+                                            <label>From Station</label>
+                                            <div class="input-group input-group-alternative">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-building"></i></span>
+                                                </div>
+                                                <asp:TextBox ID="tbFrom" runat="server" MaxLength="50" CssClass="form-control pl-0" type="Search" placeholder="From" AutoComplete="off"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ">
+                                        <div class="form-group">
+                                            <label>To Station</label>
+                                            <div class="input-group input-group-alternative">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-building"></i></span>
+                                                </div>
+                                                <asp:TextBox ID="tbTo" runat="server" MaxLength="50" CssClass="form-control pl-0" type="Search" placeholder="To" AutoComplete="off"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-lg-6 ">
+                                        <div class="form-group">
+                                            <label>Journey Date</label>
+                                            <div class="input-group input-group-alternative">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-calendar-alt"></i></span>
+                                                </div>
+                                                <asp:TextBox ID="tbDate" runat="server" MaxLength="10" CssClass="form-control pl-0" type="Search" placeholder="DD/MM/YYYY" AutoComplete="off"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ">
+                                        <div class="form-group">
+                                            <label>Service (Optional)</label>
+                                            <asp:DropDownList ID="ddlserviretype" runat="server" CssClass="form-control">
+                                            </asp:DropDownList>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 no-space ">
+                                <div class="show1 ">
+                                    <asp:LinkButton ID="lbtnSearchServices" runat="server" CssClass="btn btn-primary" Style="text-align: center; padding: 30px; padding-left: 10px; padding-right: 10px;"
+                                        OnClick="lbtnSearchServices_Click">
+                                            Check Availability
+                                    </asp:LinkButton>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="tk-bg">
+                                <div class="tx4">Popular <span class="org">Routes</span></div>
+                                <asp:Repeater ID="rptRoutes" runat="server" OnItemCommand="rptRoutes_ItemCommand">
+                                    <ItemTemplate>
+                                        <div class="blu-hd1">
+                                            <asp:HiddenField ID="hdfrmstation" runat="server" Value='<%#Eval("from_station_name")%>' />
+                                            <asp:HiddenField ID="hdtostation" runat="server" Value='<%#Eval("to_station_name")%>' />
+                                            <asp:LinkButton ID="lbtnroute" runat="server"><i class="fa fa-angle-double-right" aria-hidden="true"></i> <%#Eval("from_station_name")%> - <%#Eval("to_station_name")%></asp:LinkButton>
+                                        </div>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="tk-bg">
+                                <div class="tx4">Exclusive <span class="org">Offers</span></div>
+                                <div>
+                                    <img src="assets/img/offer1.png">
+                                </div>
+                                <div>
+                                    <img src="assets/img/offer2.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</asp:Content>
+

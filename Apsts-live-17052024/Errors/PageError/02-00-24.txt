@@ -1,0 +1,225 @@
+
+Log Entry : 
+04/02/2024 05:55:37
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"3103202400042P8","providerReferenceId":"T2404020554545683336796","amount":52000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0107","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+04/02/2024 05:55:37
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+04/02/2024 08:08:14
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0104202400041P4","providerReferenceId":"T2404020807306795802000","amount":69000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0068","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+04/02/2024 08:08:14
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+04/02/2024 08:22:18
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0104202400041P6","providerReferenceId":"T2404020821351830430320","amount":54000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0068","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+04/02/2024 08:22:18
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+04/02/2024 08:23:07
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0104202400041P7","providerReferenceId":"T2404020822245894225303","amount":69000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0068","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+04/02/2024 08:23:07
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+04/02/2024 09:51:00
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmRefundPmtsQry.aspx|  Error Code :PhonePeRefundAPI-responseData| Error Message:{"success":true,"code":"PAYMENT_PENDING","message":"Your request is in pending state.","data":{"merchantId":"APSTSDQR","amount":54000,"providerReferenceId":"P2404020950176920430108","status":"CREATED","transactionId":"3003202400031P1D201"}}
+__________________________
+
+Log Entry : 
+04/02/2024 09:51:19
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmRefundStatusPmtsQry.aspx|  Error Code :PhonePeRefundStatusAPI-responseData| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"3003202400031P1D201","providerReferenceId":"P2404020950176920430108","amount":54000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS"}}
+__________________________
+
+Log Entry : 
+05/02/2024 06:41:08
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"3004202400042P12","amount":52500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+05/02/2024 06:41:08
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+05/02/2024 08:02:15
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0105202400041P1","providerReferenceId":"T2405020801146926715721","amount":276000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0068","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+05/02/2024 08:02:15
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+05/02/2024 08:05:42
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQR","transactionId":"0105202400041P3","providerReferenceId":"T2405020804464895316382","amount":276000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","transactionContext":{"storeId":"APSTS0068","terminalId":"terminal1"}}}
+__________________________
+
+Log Entry : 
+05/02/2024 08:05:42
+Error In: https://apsts.arunachal.gov.in/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+05/02/2024 10:19:23
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Request-01| Error Message:Success
+__________________________
+
+Log Entry : 
+05/02/2024 10:19:23
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePeStatusAPI-01| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQR","transactionId":"3004202400042P12","amount":52500,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+05/02/2024 10:19:23
+Error In: https://apsts.arunachal.gov.in/Auth/sysAdmOrphanPmtsQry.aspx|  Error Code :PhonePe_status_Response-01| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 12:42:06
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQRUAT","transactionId":"131F1300308202410001","amount":79000,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+08/02/2024 12:42:06
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 12:43:49
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQRUAT","transactionId":"148I1600308202410001","providerReferenceId":"T2408021227402697245951","amount":73500,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","paymentModes":[{"mode":"ACCOUNT","amount":73500,"vpa":"123456","ifsc":"CBIN0281111","utr":"240802122740","upiTransactionId":"U2408021227402697245862","accountType":"SAVINGS"}],"transactionContext":{}}}
+__________________________
+
+Log Entry : 
+08/02/2024 12:43:49
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 12:49:00
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQRUAT","transactionId":"2F202082024100000001","amount":8000,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+08/02/2024 12:49:00
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 12:49:19
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQRUAT","transactionId":"2F202082024100000002","amount":50000,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+08/02/2024 12:49:19
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 12:56:08
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQRUAT","transactionId":"TX323218496442342223","amount":100,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+08/02/2024 12:56:08
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 12:58:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQRUAT","transactionId":"144F1430208202410006","providerReferenceId":"T2408021242189460583897","amount":3500,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","paymentModes":[{"mode":"ACCOUNT","amount":3500,"vpa":"123456","ifsc":"CBIN0281111","utr":"240802124218","upiTransactionId":"U2408021242189460583995","accountType":"SAVINGS"}],"transactionContext":{}}}
+__________________________
+
+Log Entry : 
+08/02/2024 12:58:28
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 13:03:27
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQRUAT","transactionId":"144I1440608202410001","providerReferenceId":"T2408021247186040583502","amount":78000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","paymentModes":[{"mode":"ACCOUNT","amount":78000,"vpa":"123456","ifsc":"CBIN0281111","utr":"240802124718","upiTransactionId":"U2408021247186040583297","accountType":"SAVINGS"}],"transactionContext":{}}}
+__________________________
+
+Log Entry : 
+08/02/2024 13:03:27
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 13:07:59
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQRUAT","transactionId":"144I1440608202410002","providerReferenceId":"T2408021251497547245567","amount":78000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","paymentModes":[{"mode":"ACCOUNT","amount":78000,"vpa":"123456","ifsc":"CBIN0281111","utr":"240802125149","upiTransactionId":"U2408021251497547245634","accountType":"SAVINGS"}],"transactionContext":{}}}
+__________________________
+
+Log Entry : 
+08/02/2024 13:07:59
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 13:10:55
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":false,"code":"PAYMENT_ERROR","message":"Payment Failed","data":{"merchantId":"APSTSDQRUAT","transactionId":"144F1430608202410001","amount":78000,"paymentState":"FAILED","payResponseCode":"TXN_AUTO_FAILED"}}
+__________________________
+
+Log Entry : 
+08/02/2024 13:10:55
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 13:18:56
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQRUAT","transactionId":"144F1430308202410001","providerReferenceId":"T2408021302469749759084","amount":78000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","paymentModes":[{"mode":"ACCOUNT","amount":78000,"vpa":"123456","ifsc":"CBIN0281111","utr":"240802130246","upiTransactionId":"U2408021302469749759772","accountType":"SAVINGS"}],"transactionContext":{}}}
+__________________________
+
+Log Entry : 
+08/02/2024 13:18:56
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 13:29:48
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQRUAT","transactionId":"146F1470308202410003","providerReferenceId":"T2408021313393369759464","amount":78000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","paymentModes":[{"mode":"ACCOUNT","amount":78000,"vpa":"123456","ifsc":"CBIN0281111","utr":"240802131339","upiTransactionId":"U2408021313393369759159","accountType":"SAVINGS"}],"transactionContext":{}}}
+__________________________
+
+Log Entry : 
+08/02/2024 13:29:48
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 13:32:50
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQRUAT","transactionId":"144F1430208202410008","providerReferenceId":"T2408021316416010583169","amount":3500,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","paymentModes":[{"mode":"ACCOUNT","amount":3500,"vpa":"123456","ifsc":"CBIN0281111","utr":"240802131641","upiTransactionId":"U2408021316416010583912","accountType":"SAVINGS"}],"transactionContext":{}}}
+__________________________
+
+Log Entry : 
+08/02/2024 13:32:50
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
+
+Log Entry : 
+08/02/2024 13:36:25
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :pg-phonepeResponse.aspx3| Error Message:{"success":true,"code":"PAYMENT_SUCCESS","message":"Your payment is successful.","data":{"merchantId":"APSTSDQRUAT","transactionId":"144F1430208202410009","providerReferenceId":"T2408021320159890583596","amount":6000,"paymentState":"COMPLETED","payResponseCode":"SUCCESS","paymentModes":[{"mode":"ACCOUNT","amount":6000,"vpa":"123456","ifsc":"CBIN0281111","utr":"240802132015","upiTransactionId":"U2408021320159890583597","accountType":"SAVINGS"}],"transactionContext":{}}}
+__________________________
+
+Log Entry : 
+08/02/2024 13:36:25
+Error In: https://utcdemo.uk.gov.in/starbusarn_audit/PG/PhonePeResponse.aspx|  Error Code :ClassPhonePe-callback_Response-TableName| Error Message:Success
+__________________________
